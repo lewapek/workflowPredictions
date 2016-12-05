@@ -16,3 +16,8 @@ project/plugins/project/
 # intellij specific
 .idea
 *.iml
+
+# other
+octave-workspace
+results
+tmp
