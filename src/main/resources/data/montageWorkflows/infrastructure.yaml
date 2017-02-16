@@ -1,0 +1,119 @@
+request_price: 0.00001
+storages:
+  S3:
+    storages_transfer_price_in: 0.0
+    storages_transfer_price_out: 0.00012
+
+storage_local_rel:
+  - [S3, amazon]
+
+transfer_rate:
+  - [S3, amazon, 8.522e-08]
+
+transfer_latency:
+  - [S3, amazon, 9.650e-01]
+
+providers:
+  amazon:
+    provider_max_machines: 20
+    transfer_price_in: 0.0
+    transfer_price_out: 0.00012
+    instances:
+      - c1-medium
+      - c1-xlarge
+      - c3-2xlarge
+      - c3-4xlarge
+      - c3-8xlarge
+      - c3-large
+      - c3-xlarge
+      - m1-large
+      - m1-medium
+      - m1-small
+      - m1-xlarge
+      - m3-2xlarge
+      - m3-large
+      - m3-medium
+      - m3-xlarge
+      - t1-micro
+
+instances:
+  c1-medium:
+    instance_price: 0.148
+    cores: 2
+    mem: 1.7
+    network: 0.3
+  c1-xlarge:
+    instance_price: 0.592
+    cores: 8
+    mem: 7
+    network: 1
+  c3-2xlarge:
+    instance_price: 0.478
+    cores: 8
+    mem: 15
+    network: 1
+  c3-4xlarge:
+    instance_price: 0.956
+    cores: 16
+    mem: 30
+    network: 1
+  c3-8xlarge:
+    instance_price: 1.912
+    cores: 32
+    mem: 60
+    network: 10
+  c3-large:
+    instance_price: 0.120
+    cores: 2
+    mem: 3.75
+    network: 0.3
+  c3-xlarge:
+    instance_price: 0.239
+    cores: 4
+    mem: 7
+    network: 0.3
+  m1-large:
+    instance_price: 0.190
+    cores: 2
+    mem: 7.5
+    network: 0.3
+  m1-medium:
+    instance_price: 0.379
+    cores: 1
+    mem: 3.75
+    network: 0.3
+  m1-small:
+    instance_price: 0.047
+    cores: 1
+    mem: 1.7
+    network: 0.05
+  m1-xlarge:
+    instance_price: 0.379
+    cores: 4
+    mem: 15
+    network: 1
+  m3-2xlarge:
+    instance_price: 0.616
+    cores: 8
+    mem: 30
+    network: 1
+  m3-large:
+    instance_price: 0.154
+    cores: 2
+    mem: 7.5
+    network: 0.3
+  m3-medium:
+    instance_price: 0.077
+    cores: 1
+    mem: 3.75
+    network: 0.3
+  m3-xlarge:
+    instance_price: 0.308
+    cores: 4
+    mem: 15
+    network: 1
+  t1-micro:
+    instance_price: 0.020
+    cores: 1
+    mem: 0.613
+    network: 0.01

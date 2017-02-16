@@ -15,6 +15,9 @@ object Settings extends Settings {
 
 trait Settings {
 
+  def resourcesData(name: String): String =
+    "src/main/resources/data/" + name
+
   def resultFile(name: String): String =
     "results/" + name
 
