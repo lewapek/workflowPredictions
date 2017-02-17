@@ -26,15 +26,21 @@ object Octave {
   }
 
   def rmse: Double = {
-    Source.fromFile("tmp/rmse.csv").getLines().toList.head.toDouble
+    doubleFrom(Source.fromFile("tmp/rmse.csv").getLines().toList.head)
   }
 
   def relativeError: Double = {
-    Source.fromFile("tmp/relativeError.csv").getLines().toList.head.toDouble
+    doubleFrom(Source.fromFile("tmp/relativeError.csv").getLines().toList.head)
   }
 
   def theta: List[Double] = {
     Source.fromFile("tmp/theta.csv").getLines().map(_.toDouble).toList
+  }
+
+  private def doubleFrom(string: String): Double = {
+    if (string == "Inf" || string == "inf") {
+      Double.MaxValue
+    } else string.toDouble
   }
 
 }

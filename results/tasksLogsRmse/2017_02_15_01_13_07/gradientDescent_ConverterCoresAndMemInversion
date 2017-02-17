@@ -1,0 +1,14 @@
+ConverterCoresAndMemInversion
+price :: (1.0 / cores) :: (1.0 / memoryGiB) :: network :: montage :: inputDataSize :: outputDataSize
+                task           rmse       relative
+                mAdd         135.53           5.72
+               mAdd2           0.30           0.39
+         mBackground           1.02           1.09
+            mBgModel         873.30           8.40
+          mConcatFit         132.89           8.87
+            mDiffFit           0.42           0.58
+             mImgtbl           5.54           2.13
+            mImgtbl2           0.83           0.35
+               mJPEG           0.69           0.39
+          mProjectPP           1.82           0.46
+             mShrink          37.75           3.34

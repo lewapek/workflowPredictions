@@ -1,0 +1,12 @@
+    task, w=weighted        w stdev          stdev     w variance       variance
+                mAdd          18.63          11.37         813.40         459.22
+               mAdd2              -              -              -              -
+         mBackground           0.79           0.51           0.97           0.50
+            mBgModel              -              -              -              -
+          mConcatFit              -              -              -              -
+            mDiffFit           0.32           0.25           0.15           0.11
+             mImgtbl           2.54           1.67          13.21           8.35
+            mImgtbl2              -              -              -              -
+               mJPEG              -              -              -              -
+          mProjectPP           0.76           0.56           2.35           1.62
+             mShrink          12.76           7.64         462.47         255.21

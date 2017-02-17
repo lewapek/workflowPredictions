@@ -1,0 +1,14 @@
+ConverterLinearNoInstance
+montage :: inputDataSize :: outputDataSize
+                task           rmse       relative
+                mAdd         211.76           2.27
+               mAdd2           0.32           0.43
+         mBackground           1.18           1.36
+            mBgModel         756.04           1.14
+          mConcatFit         119.59           0.63
+            mDiffFit           0.55           0.91
+             mImgtbl           4.41           2.11
+            mImgtbl2           0.26           0.75
+               mJPEG           0.32           0.56
+          mProjectPP           2.80           0.60
+             mShrink          31.49           3.26

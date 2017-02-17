@@ -1,0 +1,697 @@
+9913.160831025056, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+17848.29854820473, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+18843.56863791507, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+19170.38694545715, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+19321.36324613806, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+19630.26537649547, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+19814.6538458357, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+19896.22960119953, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+19912.00237601697, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+20011.51121059299, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+20073.242642897, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+20159.09115935723, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+20203.68678336255, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+20259.55635737789, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+20422.11694577326, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+22369.74756473986, 14, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+22421.61480429741, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+22524.83389762646, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+22589.89018287997, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+22797.18896997124, 13, m1-xlarge m3-medium c3-xlarge c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+22868.64177205713, 13, m1-xlarge m3-medium c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+22983.24735657468, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+23045.66948003166, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+23185.16524266266, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+23295.3380913377, 13, m1-xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+23581.65998041489, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+23874.87982921589, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+23980.20266195172, 13, m1-xlarge m3-medium c3-xlarge c3-large m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+23987.34037522939, 13, m3-medium c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+30789.32600992369, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+31195.92885950466, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+31781.53467893846, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+31815.15432219175, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+31834.77420397345, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+31924.34937521196, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+31953.80116766353, 14, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32005.93118625669, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32228.97347913434, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32229.8836606156, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32252.70094821454, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32256.24044175622, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+32443.4795824867, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32504.43191316224, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+32537.4698772909, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+32566.95560065633, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+32620.69920472456, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32646.44442004905, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32665.13430397986, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32785.66146722238, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge
+32793.55978108479, 14, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32813.01374100034, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+32870.07064439021, 13, m1-xlarge m3-medium c3-4xlarge c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32916.34990676458, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32928.20740294621, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+32940.34570726514, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32950.54484051192, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+32951.02514066047, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+32983.0959522493, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+33021.19577957351, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+33038.85500493325, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+33087.44352578084, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+33153.94436109347, 13, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33173.61192531764, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33174.21923955924, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+33252.04395940537, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+33256.75716375636, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33271.03400876699, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+33282.50943730516, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33324.87375665573, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m1-medium m3-2xlarge c3-8xlarge
+33325.21348282252, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+33325.56369802398, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-8xlarge
+33358.51384431358, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge
+33365.7810824448, 13, m1-xlarge c3-4xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33368.86991156757, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge
+33381.29478376859, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33445.28846029955, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33456.69706257316, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33476.96244703771, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33492.06045091816, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33498.04107057455, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+33502.83949456256, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33596.14202416077, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+33598.87191187473, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+33610.51504193361, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+33639.75839575988, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33689.70765683742, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33705.46164456743, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+33717.74798632881, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33776.75913869142, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+33824.90448927473, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+33831.94865742288, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m1-medium c3-2xlarge c3-8xlarge
+33889.81361645028, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m3-2xlarge c3-8xlarge
+33891.39333893092, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge
+33980.77840953946, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+33987.73311456998, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+34016.02355514433, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+34042.54780807324, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+34044.09708854486, 13, m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34098.92336730238, 13, c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34111.20333462548, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+34128.13388882627, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+34194.12149743013, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34194.41759842561, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+34215.58772738113, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+34225.706282065, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+34238.7146215822, 13, m3-medium c3-4xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34274.68416339192, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+34290.92535206789, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34303.63885563405, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34340.88365696991, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge c3-2xlarge c3-8xlarge
+34377.00314468025, 13, m1-xlarge m3-medium c3-4xlarge c3-large m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34440.88595793211, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34465.01189338925, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34542.19437122821, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34543.67217122755, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+34660.35996800283, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34680.7867438336, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+34694.77436905479, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+34816.0396362126, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+35007.72698769277, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+35255.11915767221, 13, m3-medium c3-4xlarge c3-xlarge c3-large m1-large m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+423386.4110235019, 16, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+437061.6914877979, 15, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+444251.630322123, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+444795.2765442216, 15, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+445446.6168276501, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+445884.6097673863, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+446293.3266585014, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+446354.14177221, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+446886.2729230121, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+447007.7317241952, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+447759.9310694167, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+450022.8053126229, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+450186.3883647972, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+450287.4834936865, 15, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+450544.9271742503, 15, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+451377.6376417836, 15, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+459735.4717073771, 14, m1-xlarge m3-medium c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+460104.2464635762, 14, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+460216.7391897072, 14, m1-xlarge m3-medium c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+460660.2689346286, 14, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+461503.2940931364, 14, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+461673.8853613556, 14, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+462611.1902223318, 14, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+464023.9335687223, 14, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+464081.3691151161, 14, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+466262.6137634377, 14, m1-xlarge m3-medium c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+466481.2386049063, 14, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+466783.0663205593, 14, m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+466838.9213836956, 14, m1-xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+467258.1804070065, 14, m1-xlarge m3-medium c3-4xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+468081.4823755892, 14, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+468306.8442234036, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+468689.4587604239, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+468891.4076670497, 14, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+469362.7650228497, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+469396.9563887324, 14, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+469563.2001900239, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+470097.7146270684, 14, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+470206.6756204625, 14, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+470240.1474912025, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+470268.8956231671, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+470863.2093683482, 14, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+470902.3771206453, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-8xlarge
+470987.7736776915, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+471053.2920406474, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge
+471186.0318139098, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+471266.2468655237, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+471313.6317957714, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge
+471577.4500227364, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium m3-2xlarge c3-8xlarge
+471685.6729010741, 14, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+471801.4763752255, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+471932.2630217714, 14, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+471936.8608625445, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+472454.4356922887, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m3-2xlarge c3-8xlarge
+472563.0703529959, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge
+472784.1462611544, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+472789.5959745158, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge c3-8xlarge
+472972.2016361663, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge c3-8xlarge
+473108.5524755725, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+473208.1552487688, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+473534.271993129, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+473676.8826971428, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+473741.1375006314, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+473912.4659706689, 14, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+473976.7617082588, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+474133.6581367413, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge
+474216.1485257066, 14, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+474411.34307029, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+474512.0141512461, 14, m1-xlarge m3-medium c3-4xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+474534.2591633735, 14, m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+474591.12544856, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+474620.8551265015, 14, m1-xlarge c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+474692.5598132987, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+474990.6775537239, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+475106.6535031743, 14, m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+475159.1904410527, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+475249.9801322276, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+475481.5867421227, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+475528.9727520793, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+475564.6589748563, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+475598.2742981378, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+475801.5895735876, 14, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+475828.3109550008, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+475910.809248894, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+476023.3570691197, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+476143.9671972566, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+476186.3453048542, 14, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+476275.1841055001, 14, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+476335.3825040832, 14, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+476376.5565558444, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+476406.0253715944, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+476704.6335722129, 14, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+476764.2730759537, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+476945.3230516263, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+477005.1962782521, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+477121.6392564664, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+477134.7326702822, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+477221.7008571888, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+477317.7441148647, 14, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+477326.6058868598, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+477381.2502405978, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+477534.3839166633, 14, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+477577.3023172858, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+477840.4763605, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+477917.9165756109, 14, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+478004.5256570056, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+478052.9786033782, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+478287.4353091227, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+478524.0003319645, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+478578.7794511698, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+479516.8278934385, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+480278.6756665422, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+480442.3420599899, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+480839.7537042396, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+480930.0745709977, 14, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+481026.8542193131, 14, m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+481252.8716177812, 14, c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+481835.8590648026, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+482070.7894168693, 14, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+482107.2973419246, 14, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+482461.8832681513, 14, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+484322.9966107152, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge
+484686.7342226366, 13, m1-xlarge m3-medium c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+484890.7618543693, 13, m1-xlarge m3-medium c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+485518.8406304065, 13, m1-xlarge m3-medium c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+486019.6388512725, 13, m1-xlarge m3-medium c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+486340.4542569982, 13, m1-xlarge m3-medium c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+486384.0847832488, 13, m1-xlarge m3-medium c3-xlarge c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+486773.3683877196, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+486954.8773306172, 13, m1-xlarge m3-medium c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+487024.9908623063, 13, m1-xlarge m3-medium c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+487185.6880641124, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge
+487414.0573069855, 13, m1-xlarge m3-medium c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+487668.2115754654, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+487944.5325488593, 13, m1-xlarge m3-medium c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+487982.1718818545, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-8xlarge
+488494.820223175, 13, m1-xlarge m3-medium c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+488534.1940222926, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge
+488967.4888755273, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium m3-2xlarge c3-8xlarge
+489390.8633422854, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+489439.2830759191, 13, m1-xlarge m3-medium c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+489801.0309883342, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+490060.0729199534, 13, m1-xlarge m3-medium c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+490530.6708799118, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge c3-8xlarge
+490590.7544288965, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m3-2xlarge c3-8xlarge
+491014.555821681, 13, m1-xlarge m3-medium c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+491090.0661007125, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge c3-8xlarge
+491473.2933299767, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+491613.5968090076, 13, m1-xlarge m3-medium c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+491875.5100525529, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+492238.6934451981, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+492256.9181493265, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge
+492269.0654302063, 13, m1-xlarge m3-medium c3-xlarge c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+492276.0579624342, 13, m1-xlarge m3-medium c3-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+492353.5957699806, 13, m1-xlarge m3-medium c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+492731.0251764822, 13, m1-xlarge m3-medium c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+492768.4670711935, 13, m1-xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+492882.4056387251, 13, m1-xlarge m3-medium c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+492957.3428897485, 13, m1-xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+492963.8126801939, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+493018.1815644934, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+493043.4799784747, 13, m3-medium c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+493225.659425196, 13, m1-xlarge m3-medium c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+493261.0146304018, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+493322.5563847186, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+493382.9215586825, 13, m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+493411.9892548569, 13, m1-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+493414.4362474043, 13, m1-xlarge m3-medium c3-4xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+493541.6560255351, 13, m3-medium c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+493586.1929839989, 13, m1-xlarge m3-medium c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+493602.6546210275, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+493858.8371093124, 13, m1-xlarge m3-medium c3-4xlarge c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+493935.1015499508, 13, m1-xlarge m3-medium c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+493994.5731573287, 13, m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+494096.2538012332, 13, m1-xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+494310.4576804457, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+494378.6105872156, 13, m1-xlarge m3-medium c3-xlarge c3-large m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+494517.0889697883, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+494540.4504759718, 13, m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+494600.6129438863, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+494645.22274482, 13, m1-xlarge m3-medium c3-xlarge c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+494856.4366671023, 13, m1-xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+495007.3051385518, 13, m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+495008.1879002812, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+495161.0303332059, 13, m1-xlarge m3-medium c3-4xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+495179.1936078503, 13, m1-xlarge m3-medium c3-4xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+495196.7282485263, 13, m1-xlarge m3-medium c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+495270.8777509477, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+495280.2087742614, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+495488.3470970057, 13, m1-xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+495584.6692739998, 13, m1-xlarge m3-medium c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+495720.6076093514, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+495921.7122083, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+495959.8590783479, 13, m1-xlarge m3-medium c3-4xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+496050.2865894352, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+496188.0467852558, 13, m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+496247.4987072752, 13, m1-xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+496411.9696031388, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+496450.1147686059, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-8xlarge
+496566.4689652825, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+496595.3352122417, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge
+496677.4237566866, 13, m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+496695.2455099815, 13, m1-xlarge m3-medium c3-4xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+496867.6930331702, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge
+496915.7310772769, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+497020.2096201224, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-8xlarge
+497126.3486152224, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium m3-2xlarge c3-8xlarge
+497365.2743760185, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+497386.4598855872, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge
+497415.0909711788, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+497567.2707245905, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+497804.5441445507, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium m3-2xlarge c3-8xlarge
+497805.6398049577, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+497834.4495105407, 13, m1-xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+497904.9793786042, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge
+497936.4058391217, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+497945.6194956012, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m3-2xlarge c3-8xlarge
+497982.1037973203, 13, m1-xlarge m3-medium c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+497984.1955129223, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+498115.889237946, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+498200.6261348724, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+498299.871096994, 13, m1-xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+498380.9526215908, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge
+498384.9480258866, 13, m1-xlarge m3-medium c3-4xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+498504.4968317756, 13, m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+498564.9949871477, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge c3-8xlarge
+498715.3221094919, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m3-2xlarge c3-8xlarge
+498753.0728801416, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+498754.9022680682, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium m3-2xlarge
+499068.9176607869, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge c3-8xlarge
+499107.6704933069, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium
+499122.2802445357, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-8xlarge
+499181.691952717, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m1-medium m3-2xlarge c3-8xlarge
+499265.8876642211, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge c3-8xlarge
+499337.8436509955, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge
+499490.9985932058, 13, m1-xlarge m3-medium c3-4xlarge c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+499509.774170651, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+499606.4022907393, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+499619.2982096504, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge
+499657.7307967069, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+499666.8866410928, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge c3-8xlarge
+499752.0748626423, 13, m1-xlarge m3-medium c3-xlarge c3-large m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+499807.409666461, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+500018.1294485629, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+500072.6633743293, 13, m1-xlarge c3-4xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+500246.4562836532, 13, m3-medium c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+500251.877979933, 13, m1-xlarge m3-medium c3-4xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+500266.0813246593, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium m3-2xlarge
+500267.2801318188, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge
+500282.8049587723, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge
+500331.0890632831, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-8xlarge
+500431.6826848347, 13, m1-xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+500465.0794230477, 13, m1-xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+500506.8619772955, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-8xlarge
+500547.4529774544, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+500603.6187747346, 13, m3-medium c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+500680.8281909294, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m3-2xlarge c3-8xlarge
+500703.6269508844, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+500910.8218818126, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+500923.3218008946, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+501025.0659075378, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+501039.2900962469, 13, c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+501061.7145812787, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge
+501068.5236837241, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge
+501190.5270274168, 13, m3-medium c3-4xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+501212.8621597787, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+501365.8024439286, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m1-medium c3-2xlarge c3-8xlarge
+501396.5034331168, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+501464.1549531187, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+501495.629894757, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+501551.1681756449, 13, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+501654.4278844846, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+501709.1749376456, 13, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+501739.5817651802, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge c3-8xlarge
+501774.829900855, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+501776.3674338658, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m3-2xlarge
+501778.6569320686, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+501851.8734686403, 13, m1-xlarge m3-medium c3-xlarge c3-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+501855.4454864275, 13, m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+501882.5655207979, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge c3-2xlarge c3-8xlarge
+501883.9737385489, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+501908.8114351848, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+501954.5294235485, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+502003.385282238, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+502004.8521831111, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge
+502027.0294493438, 13, m1-xlarge m3-medium c3-4xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+502055.651138783, 13, m1-xlarge m3-medium c3-xlarge c3-large c1-xlarge t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+502079.5708838592, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+502161.884502999, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+502206.3448007025, 13, m1-xlarge m3-medium c3-4xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+502281.6784472571, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+502284.9954080221, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+502299.2166426735, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+502315.2662299447, 13, m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+502334.6850454527, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-2xlarge c3-8xlarge
+502335.0346806148, 13, m1-xlarge c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+502432.9009238191, 13, m3-medium c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+502435.1470249721, 13, m1-xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+502473.2079878272, 13, m1-xlarge m3-medium c3-4xlarge c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+502577.8623394439, 13, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+502659.0952557109, 13, m1-xlarge c3-4xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+502683.0230328689, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+502692.1592171825, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge
+502774.7714490776, 13, m1-xlarge m3-medium c3-4xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+502797.7594981018, 13, m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+502850.8948296832, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+502871.3311304242, 13, m1-xlarge m3-medium c3-4xlarge c3-large m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+502931.5812358425, 13, m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+502943.9811247654, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-8xlarge
+502969.0504985429, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+503023.3073409515, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+503035.0121224576, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+503048.3772819609, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+503124.6921706566, 13, m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+503137.6080646638, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small c3-2xlarge c3-8xlarge
+503144.7929682891, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium m3-2xlarge
+503260.6220747144, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m3-2xlarge c3-8xlarge
+503292.711266841, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge
+503336.5382531342, 13, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+503353.6563524596, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-8xlarge
+503393.2736111841, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+503411.4595737498, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+503448.3366034385, 13, m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+503472.7783230701, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+503551.4983621642, 13, m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+503561.4801743586, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+503635.6910980654, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-medium m3-2xlarge c3-8xlarge
+503656.1471098912, 13, m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+503702.9111659725, 13, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+503704.6666021712, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+503765.4531983288, 13, m1-xlarge c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+503775.5867555338, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+503834.6193032953, 13, m1-xlarge m3-medium c3-4xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+503842.2244808799, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+503846.0127005102, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+503877.7744586472, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+503896.4958395362, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+503923.0648757993, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m3-2xlarge c3-8xlarge
+503982.2104588797, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+504041.420120905, 13, m1-xlarge c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+504114.8327899011, 13, m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+504185.4922073237, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-8xlarge
+504197.1949069989, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+504219.4041621123, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small c3-2xlarge m3-2xlarge
+504239.6469627485, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge c3-2xlarge c3-8xlarge
+504343.279493655, 13, m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+504382.2234165609, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+504464.2033244487, 13, m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+504485.1055087539, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+504495.7767730358, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge
+504495.9967268262, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge
+504497.6691113014, 13, m1-xlarge m3-medium c3-4xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+504527.48488667, 13, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+504532.456724285, 13, m1-xlarge c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+504574.0445885551, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-8xlarge
+504587.9861211323, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+504628.9666406077, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+504646.4103681433, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium m3-2xlarge
+504687.6684448271, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-medium c3-2xlarge m3-2xlarge
+504701.4855755834, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge
+504735.5977776039, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge
+504745.4961225911, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge
+504758.7553576165, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+504762.3764884743, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+504808.1754928532, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+504818.2024532538, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+504849.6083134367, 13, m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+504876.0917800252, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+504924.6127094402, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+504957.5408286112, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+505018.8942692833, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge
+505094.2146635488, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+505124.3629488585, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-8xlarge
+505125.6351469837, 13, m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+505152.4515439156, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-medium c3-2xlarge c3-8xlarge
+505154.4188361603, 13, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+505229.683036779, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+505237.5953992817, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m1-medium m3-2xlarge c3-8xlarge
+505239.986656319, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+505246.0538711646, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge
+505291.7610769897, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m1-medium m3-2xlarge c3-8xlarge
+505395.5912661909, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge c3-8xlarge
+505423.7186714186, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge
+505444.020977387, 13, m1-xlarge c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+505472.9521611793, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+505551.1666443986, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium m3-2xlarge c3-8xlarge
+505578.3076438438, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+505625.2382880634, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+505687.9830268372, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m3-2xlarge c3-8xlarge
+505689.6383353292, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+505697.5723509563, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+505721.3975702543, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+505740.9820242588, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+505803.4172866195, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+505816.6468611725, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+505841.3172601662, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+505845.7852982802, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+505877.2999936193, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge c3-2xlarge m3-2xlarge
+505878.5263942377, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+505888.8721292796, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium m3-2xlarge c3-8xlarge
+505924.9518143311, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+505964.7527239676, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge c3-8xlarge
+506052.5133799052, 13, m1-xlarge c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+506142.7700323716, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+506266.4958585829, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+506273.7893156177, 13, m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+506332.4824357553, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+506357.5143372599, 13, m1-xlarge m3-medium c3-4xlarge c3-large m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+506394.3351654855, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m1-medium c3-2xlarge m3-2xlarge
+506466.3504485157, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+506525.6571486385, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m3-2xlarge c3-8xlarge
+506562.5408001515, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge
+506562.6948193317, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge
+506691.0499760758, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m1-medium c3-2xlarge c3-8xlarge
+506754.2906282659, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-8xlarge
+506779.445457348, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m3-2xlarge c3-8xlarge
+506801.1412152124, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+506805.4523003232, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge
+506838.5825146183, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+506849.4472203458, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+506887.8965582649, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge c3-8xlarge
+506888.6825548109, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+506946.5340539721, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge
+506981.8724955066, 13, m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+506989.0951445807, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge c3-2xlarge c3-8xlarge
+507034.9164107373, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+507170.6079357814, 13, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+507174.7475186555, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+507175.8948686768, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+507180.2126132805, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+507195.5610747688, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge
+507269.8071277456, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+507270.6665719103, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge c3-8xlarge
+507314.1637969947, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m1-medium m3-2xlarge c3-8xlarge
+507336.4456350384, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+507391.6102539679, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+507414.9233404618, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge c3-8xlarge
+507516.4278844727, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+507560.6576781969, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+507573.6059056576, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+507602.7193098558, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge
+507613.4597038053, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+507645.4149218465, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+507808.149615177, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+507811.9775354604, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+507843.6989698041, 13, m1-xlarge m3-medium c3-4xlarge c3-large m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+507899.278023666, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+507900.2812002733, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+507930.9829356292, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+508046.6537929572, 13, m1-xlarge c3-4xlarge c3-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+508083.4071676751, 13, m1-xlarge c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+508136.1214966901, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+508246.7551517857, 13, m3-medium c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+508290.7509847944, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+508294.5731755171, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+508311.7185464347, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+508367.4446859167, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge
+508379.1054341619, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+508480.8158832939, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m3-2xlarge c3-8xlarge
+508503.5390050426, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge
+508596.8301106462, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+508618.8427357166, 13, m3-medium c3-4xlarge c3-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+508629.7989190263, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+508701.3130428485, 13, c3-4xlarge c3-xlarge c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+508733.8629215998, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge c3-2xlarge m3-2xlarge
+508738.8715516012, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge c3-8xlarge
+508755.7927220389, 13, m1-xlarge c3-4xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+508813.1200757886, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+508821.6068462242, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+508855.9831359851, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+508867.510508462, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+508918.4571536949, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+508956.4199264703, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge c3-8xlarge
+508970.3428330131, 13, m3-medium c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+508973.0059677895, 13, m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+508988.8346139162, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+509043.5635664992, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509062.9607271664, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509181.7920672235, 13, m3-medium c3-4xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509232.324130574, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+509233.2278110588, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+509292.4268412099, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+509332.6948462049, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509341.2761623515, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c1-xlarge t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509354.1205423275, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+509406.3928099401, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+509454.6419351793, 13, c3-4xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509650.9080489185, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+509665.8229640937, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509711.1640092824, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509727.8850466119, 13, m1-xlarge c3-4xlarge c3-xlarge c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509754.9412011214, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+509782.2683749208, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509786.0958626575, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+509919.9035813405, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+509952.6452500891, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+509972.5083648926, 13, m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+509983.7754094544, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+510132.9221957724, 13, m1-xlarge m3-medium c3-4xlarge c3-large c1-xlarge t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+510253.6712545418, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+510287.8608484063, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge
+510331.7969287175, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+510377.7558109437, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+510382.125145825, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+510429.2973188362, 13, c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+510516.0973875388, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+510526.0860967132, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+510538.4444801934, 13, m1-xlarge m3-medium c3-4xlarge c3-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+510542.0136535601, 13, m3-medium c3-4xlarge c3-xlarge c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+510545.5171286284, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+510553.0394045918, 13, m1-xlarge c3-4xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+510694.1981594141, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+510694.2234378304, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+510746.1807166808, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small c3-2xlarge m3-2xlarge c3-8xlarge
+510764.9049953316, 13, m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+510811.2978754963, 13, c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+510957.2468372525, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+510986.4697892891, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+511011.8440991628, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+511039.3956477163, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+511200.8434529214, 13, m3-medium c3-4xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+511220.9171000611, 13, m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+511239.1382541091, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+511308.1022655146, 13, c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+511340.130109837, 13, c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+511360.1664506491, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+511401.7983053315, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+511459.4264006397, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+511595.037731628, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+511625.1536258183, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+511765.7219369789, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+511815.3742893817, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+511862.4971804305, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+511883.7506342513, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+512013.7761805026, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium m3-2xlarge c3-8xlarge
+512023.7661177434, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+512035.2864696734, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+512073.8181597737, 13, m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+512095.9521363939, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+512185.737887904, 13, c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+512280.8340387999, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+512309.9562630672, 13, c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+512315.3520991402, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+512444.728054421, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+512489.0894638482, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+512504.6316139735, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+512607.1923458819, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+512645.6044345375, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+512707.5225838295, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+512789.6042243776, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+512940.6278363701, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+512975.4980292345, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge
+513098.5175282307, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge c3-8xlarge
+513110.4714908427, 13, c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+513186.36399054, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+513204.7467733248, 13, m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+513393.3190581196, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+513398.5453976228, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+513420.3657489971, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+513682.047861212, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+513691.0405757191, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+513833.8044881681, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+514008.7275447506, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+514380.5906519842, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+514518.3277013478, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+514775.2470379639, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large m1-small m3-xlarge c3-2xlarge m3-2xlarge c3-8xlarge
+515213.9376792464, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+515670.2923378394, 13, m3-medium c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+515990.5997884757, 13, c3-4xlarge c3-xlarge c3-large c1-xlarge m1-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+516326.9746528249, 13, c3-4xlarge c3-xlarge c3-large m1-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+516820.9954572433, 13, m1-xlarge m3-medium c3-4xlarge c3-xlarge c3-large t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+516898.3118570584, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+517423.0359815967, 13, m1-xlarge c3-4xlarge c3-xlarge c3-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+517544.4129786573, 13, m3-medium c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+517705.6737217382, 13, m3-medium c3-4xlarge c3-xlarge c3-large t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge
+517878.1365708369, 13, c3-4xlarge c3-xlarge c3-large c1-xlarge t1-micro m3-large c1-medium m1-small m3-xlarge m1-medium c3-2xlarge m3-2xlarge c3-8xlarge

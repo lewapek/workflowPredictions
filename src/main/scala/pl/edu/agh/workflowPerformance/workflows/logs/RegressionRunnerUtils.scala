@@ -23,7 +23,7 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends FileUtils with CsvWriter w
   val headerInInputFiles: Boolean
   val outputDir: String
 
-  val resultDir = outputDir + "/" + currentDateStringUnderscores()
+  lazy val resultDir = outputDir + "/" + currentDateStringUnderscores()
   val inputFilename = tmpFile("taskLogsInput.csv")
 
   val regressionFunctions: List[(String, RegressionFunction)] = List(
@@ -64,6 +64,7 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends FileUtils with CsvWriter w
     }
 
     val outputPath = resultDir + "/" + regressionName + "_" + converter.name
+    logger.debug(s"Writing to file $outputPath")
     File(resultDir).createDirectory(force = true)
     val outputFile = File(outputPath)
     outputFile.truncate()
@@ -80,11 +81,14 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends FileUtils with CsvWriter w
     val path = inputDataDir + "/" + name
     val linesIterator = Source.fromFile(path).getLines
     if (headerInInputFiles) {
-      linesIterator.next()
+      val header = linesIterator.next()
+      logger.debug(s"Omitting header ${header.substring(0, 100)}...")
     }
     val csvWritable = linesIterator map { line =>
       converter.convertWithTime(parseRowString(line))
     } toList
+
+    logger.debug("Lines converted to rows")
 
     writeAsCsvFile(csvWritable, inputFilename)
     val rmse = regression(inputFilename)

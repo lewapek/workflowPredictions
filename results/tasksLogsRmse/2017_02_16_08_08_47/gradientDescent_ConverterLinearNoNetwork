@@ -1,0 +1,14 @@
+ConverterLinearNoNetwork
+price :: cores :: memoryGiB :: montage :: inputDataSize :: outputDataSize
+                task           rmse       relative
+                mAdd         175.96           4.85
+               mAdd2           0.29           0.53
+         mBackground           1.05           1.12
+            mBgModel         793.56           3.99
+          mConcatFit         132.59           4.06
+            mDiffFit           0.48           0.65
+             mImgtbl           5.16           2.33
+            mImgtbl2           0.13           0.65
+               mJPEG           0.55           0.56
+          mProjectPP           2.63           0.56
+             mShrink          35.15           4.62
