@@ -11,7 +11,7 @@ import scala.reflect.io.Directory
   */
 trait FileUtils {
 
-  private val dateFormatter = new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss")
+  private val dateFormatter = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss")
 
   def listFilesFrom(directory: String): List[String] =
     Directory(directory).files.map(_.name).toList
