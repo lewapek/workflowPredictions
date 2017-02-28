@@ -1,7 +1,7 @@
 package pl.edu.agh.workflowPerformance.workflows.montage8Yaml
 
 import pl.edu.agh.workflowPerformance.Settings
-import pl.edu.agh.workflowPerformance.workflows.Entities._
+import Entities._
 import pl.edu.agh.workflowPerformance.utils.{AnyConversions, YamlParser}
 
 import scala.collection.mutable

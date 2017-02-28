@@ -1,7 +1,7 @@
 package pl.edu.agh.workflowPerformance.workflows.logs.montage.structure
 
-import pl.edu.agh.workflowPerformance.workflows.Entities.Instance
-import pl.edu.agh.workflowPerformance.workflows.logs.AbstractRow
+import pl.edu.agh.workflowPerformance.workflows.montage8Yaml.Entities.Instance
+import pl.edu.agh.workflowPerformance.workflows.logs.regression.AbstractRow
 
 /**
   * @author lewap

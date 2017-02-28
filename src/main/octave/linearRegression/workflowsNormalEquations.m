@@ -32,16 +32,18 @@ predicted = zeros(m, 1);
 for i=1:m
   predicted(i) = x(i, :) * theta;
 end
-#csvwrite("tmp/comparison.csv", [y, predicted]);
+csvwrite("tmp/comparison.csv", [y, predicted]);
 
 errors = (predicted - y) .^ 2;
-#errors = ((1 ./ predicted) - (1 ./ y)) .^ 2;
-relative_errors = abs(predicted - y) ./ y;
+absolute_errors = abs(predicted - y);
+relative_errors = absolute_errors ./ y;
 
 rmse = sqrt(sum(errors) / m);
+absolute_error_div_mean = mean(absolute_errors) / mean(y);
 relative_error = sum(relative_errors) / m;
 
 # writing results to files
 csvwrite("tmp/theta.csv", theta);
 csvwrite("tmp/rmse.csv", rmse);
+csvwrite("tmp/absDivMean.csv", absolute_error_div_mean);
 csvwrite("tmp/relativeError.csv", relative_error);

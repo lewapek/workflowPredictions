@@ -22,7 +22,7 @@ object VariancesRunner extends MontageRowParser with FileUtils with StrictLoggin
 
   case class TotalTime(length: Long, times: List[Double])
 
-  val resultFile = File("results/tasksLogsRmse/stats/stats")
+  val resultFile = File("results/montageTasks/stats/stats")
 
   def main(args: Array[String]): Unit = {
     val tasks = listFilesFrom(AllToTaskLogsRunner.taskLogsDirectory).sorted

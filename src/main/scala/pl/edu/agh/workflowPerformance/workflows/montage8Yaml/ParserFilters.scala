@@ -1,6 +1,6 @@
 package pl.edu.agh.workflowPerformance.workflows.montage8Yaml
 
-import pl.edu.agh.workflowPerformance.workflows.Entities.{Instance, Performance}
+import Entities.{Instance, Performance}
 
 /**
   * @author lewap

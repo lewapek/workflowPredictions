@@ -5,7 +5,7 @@ package pl.edu.agh.workflowPerformance.workflows.logs.sns.structure
   * @since 16.02.17
   */
 trait SnsRowParser {
-  def parseSnsRow(line: String): SnsRow = {
+  def parseSnsTotalTimeRow(line: String): SnsTotalTimeRow = {
     val splitLine = line.trim.split(',')
 
     val atoms = Atoms.from(splitLine(0))
@@ -14,7 +14,20 @@ trait SnsRowParser {
     val outputFrequency = OutputFrequencies.from(splitLine(3))
     val time = splitLine(6).toDouble
 
-    SnsRow(time, atoms, cores, timesteps, outputFrequency)
+    SnsTotalTimeRow(time, atoms, cores, timesteps, outputFrequency)
+  }
+
+  def parseSnsProfileRow(line: String): SnsProfileRow = {
+    val splitLine = line.trim.split(',')
+
+    val atoms = Atoms.from(splitLine(0))
+    val cores = Cores.from(splitLine(1))
+    val timesteps = Timesteps.from(splitLine(2))
+    val outputFrequency = OutputFrequencies.from(splitLine(3))
+    val pointInTime = splitLine(6).toDouble
+    val cumulativeSTime = splitLine(8).toDouble
+
+    SnsProfileRow(time = cumulativeSTime, atoms, cores, timesteps, outputFrequency, pointInTime)
   }
 }
 

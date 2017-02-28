@@ -1,7 +1,7 @@
 package pl.edu.agh.workflowPerformance.workflows.logs.montage.featureConverters
 
-import pl.edu.agh.workflowPerformance.workflows.logs.AbstractFeatureConverter
 import pl.edu.agh.workflowPerformance.workflows.logs.montage.structure.MontageRow
+import pl.edu.agh.workflowPerformance.workflows.logs.regression.AbstractFeatureConverter
 
 /**
   * @author lewap

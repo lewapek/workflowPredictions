@@ -2,11 +2,11 @@ package pl.edu.agh.workflowPerformance.workflows.logs.montage
 
 import com.typesafe.scalalogging.StrictLogging
 import pl.edu.agh.workflowPerformance.Settings
-import pl.edu.agh.workflowPerformance.utils.Octave.RegressionFunction
-import pl.edu.agh.workflowPerformance.utils.{CsvWriter, FileUtils, Octave}
-import pl.edu.agh.workflowPerformance.workflows.logs.AbstractFeatureConverter
+import pl.edu.agh.workflowPerformance.utils.ExternalRegressionExecutor.RegressionFunction
+import pl.edu.agh.workflowPerformance.utils.{CsvWriter, ExternalRegressionExecutor, FileUtils}
 import pl.edu.agh.workflowPerformance.workflows.logs.montage.featureConverters._
 import pl.edu.agh.workflowPerformance.workflows.logs.montage.structure.{MontageRow, MontageRowParser}
+import pl.edu.agh.workflowPerformance.workflows.logs.regression.AbstractFeatureConverter
 import pl.edu.agh.workflowPerformance.workflows.montage8Yaml.MontageYamlParser
 
 import scala.io.Source
@@ -24,13 +24,13 @@ object DeprecatedRegressionRunner extends Settings with CsvWriter with FileUtils
   private val montageWorkflowsDataPath = resourcesData("montageWorkflows")
   val taskLogsDirectory = montageWorkflowsDataPath + "/tasksLogs"
   val inputFilename = tmpFile("taskLogsInput.csv")
-  val resultsDirectory = "results/tasksLogsRmse"
+  val resultsDirectory = "results/montageTasks"
   val subdirectory = currentDateStringUnderscores()
 
   def main(args: Array[String]): Unit = {
     val regressionFunctions: List[(String, RegressionFunction)] = List(
-      "gradientDescent" -> Octave.runLinearRegressionGradientDescentWith,
-      "normalEquations" -> Octave.runNormalEquationsWith
+      "gradientDescent" -> ExternalRegressionExecutor.runLinearRegressionGradientDescentWith,
+      "normalEquations" -> ExternalRegressionExecutor.runNormalEquationsWith
     )
     val converters = List(
       ConverterLinearFull,
@@ -90,7 +90,7 @@ object DeprecatedRegressionRunner extends Settings with CsvWriter with FileUtils
   }
 
   private def runSingleTask(name: String,
-                            regression: RegressionFunction = Octave.runLinearRegressionGradientDescentWith,
+                            regression: RegressionFunction = ExternalRegressionExecutor.runLinearRegressionGradientDescentWith,
                             converter: AbstractFeatureConverter[MontageRow]): (Double, Double) = {
     logger.debug("Running task: {}", name)
     val path = AllToTaskLogsRunner.taskLogsDirectory + "/" + name
@@ -100,8 +100,9 @@ object DeprecatedRegressionRunner extends Settings with CsvWriter with FileUtils
     } toList
 
     writeAsCsvFile(csvWritable, inputFilename)
-    val rmse = regression(inputFilename)
-    val relativeError = Octave.relativeError
+    regression(inputFilename)
+    val rmse = ExternalRegressionExecutor.rmse
+    val relativeError = ExternalRegressionExecutor.relativeError
 
     logger.debug(s"rmse: $rmse, relative error = $relativeError")
 
