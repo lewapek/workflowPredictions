@@ -1,0 +1,4 @@
+ConverterLinearFull
+price :: cores :: memoryGiB :: network :: montage :: inputDataSize :: outputDataSize
+                task           rmse       relative           runs
+                mAdd         155.11           4.72              5

@@ -1,0 +1,14 @@
+ConverterLinearNoDataSizes
+price :: cores :: memoryGiB :: network :: montage
+                task           rmse     absDivMean       relative           runs
+                mAdd          27.25           0.09           0.21              5
+               mAdd2           0.34           0.50           0.48              5
+         mBackground           0.98           0.55           0.97              5
+            mBgModel         434.95           0.43           0.49              5
+          mConcatFit          77.31           0.29           0.34              5
+            mDiffFit           0.39           0.36           0.47              5
+             mImgtbl           4.23           0.59           1.73              5
+            mImgtbl2           0.50           0.86           0.69              5
+               mJPEG           0.58           0.36           0.32              5
+          mProjectPP           1.53           0.24           0.25              5
+             mShrink          21.77           0.38           0.91              5

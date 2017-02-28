@@ -1,0 +1,5 @@
+task,rmse,relative,runs
+namd2,77.69683263708323,Infinity,5
+namd3,67.66411265119845,Infinity,5
+sassena5,158.7267702777261,Infinity,5
+sassena6,44.187186299492986,Infinity,5

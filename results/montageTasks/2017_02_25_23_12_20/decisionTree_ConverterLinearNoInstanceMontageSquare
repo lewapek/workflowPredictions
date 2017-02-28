@@ -1,0 +1,14 @@
+ConverterLinearNoInstanceMontageSquare
+(montage * montage) :: inputDataSize :: outputDataSize
+                task           rmse       relative           runs
+          mProjectPP           2.85           0.60              1
+            mImgtbl2           0.89           0.70              1
+             mImgtbl           5.73           1.84              1
+               mAdd2           0.46           0.50              1
+            mDiffFit           0.55           0.90              1
+               mJPEG           0.47           0.43              1
+                mAdd         248.41           1.28              1
+             mShrink          35.66           2.70              1
+            mBgModel        1415.54           0.78              1
+         mBackground           1.18           1.37              1
+          mConcatFit         324.45           0.67              1

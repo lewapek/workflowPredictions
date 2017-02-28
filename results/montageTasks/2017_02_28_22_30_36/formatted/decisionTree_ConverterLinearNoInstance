@@ -1,0 +1,14 @@
+ConverterLinearNoInstance
+montage :: inputDataSize :: outputDataSize
+                task           rmse     absDivMean       relative           runs
+                mAdd         238.09           0.76           1.30              5
+               mAdd2           0.25           0.51           0.64              5
+         mBackground           1.19           0.71           1.35              5
+            mBgModel         598.49           0.96           0.95              5
+          mConcatFit         163.01           0.72           0.65              5
+            mDiffFit           0.55           0.68           0.90              5
+             mImgtbl           5.34           0.77           1.64              5
+            mImgtbl2           0.63           0.69           0.78              5
+               mJPEG           0.50           0.51           0.52              5
+          mProjectPP           2.80           0.59           0.60              5
+             mShrink          33.21           0.85           2.74              5

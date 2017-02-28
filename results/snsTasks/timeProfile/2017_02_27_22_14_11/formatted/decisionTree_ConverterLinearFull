@@ -1,0 +1,7 @@
+ConverterLinearFull
+atoms :: cores :: timesteps :: outputFrequency :: pointInTime
+                task           rmse       relative           runs
+               namd2          80.99         486.70              5
+               namd3          68.84       Infinity              5
+            sassena5         156.83       Infinity              5
+            sassena6          44.46       Infinity              5
