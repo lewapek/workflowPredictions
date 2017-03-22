@@ -5,6 +5,7 @@ import pl.edu.agh.workflowPerformance.Settings
 import pl.edu.agh.workflowPerformance.utils.{CsvWriter, FileUtils, PlotUtils}
 import pl.edu.agh.workflowPerformance.workflows.{ConverterError, Error, RegressionError, TaskError}
 
+import scala.concurrent.ExecutionContext
 import scala.io.Source
 import scala.language.postfixOps
 
@@ -14,6 +15,8 @@ import scala.language.postfixOps
   */
 trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with FileUtils with PlotUtils with CsvWriter
   with StrictLogging with Settings {
+
+  override implicit val executionContext: ExecutionContext = ExecutionContext.Implicits.global
 
   def parseRowString(row: String): T
 
@@ -78,12 +81,14 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
       logger.debug(s"Run #$run")
       val error = regression.function(inputFilename)
       logger.debug(s"Error #$run = $error")
-      if (run == 1) {
-        makeComparisonPlot(
-          title = s"${task}_${converter.name}_${regression.name}_comparison",
-          outputFile = s"$plotsDir/$task/${regression.name}/${converter.name}.png"
-        )
-      }
+
+      val outputFilesPrefix = s"$plotsDir/$task/${regression.name}/${converter.name}_run$run"
+      makeComparisonPlot(
+        title = s"${task}_${converter.name}_${regression.name}_comparison_run$run",
+        outputFile = s"$outputFilesPrefix.png",
+        newComparisonFile = s"$outputFilesPrefix.csv"
+      )
+
       error
     }
     val rmse = errors.map(_.rmse).sum / regression.runs

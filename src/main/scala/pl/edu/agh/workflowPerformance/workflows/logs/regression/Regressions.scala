@@ -30,14 +30,23 @@ object Regressions {
   }
 
   def decisionTree(maxDepth: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
-    override val name: String = "decisionTree"
+    override val name: String = s"decisionTree$maxDepth"
     override val runs: Int = runsQuantity
 
     override def function(inputFilename: String): Error = {
       runRegressionDecisionTreeWith(treeMaxDepth = maxDepth)(inputFilename)
       Error(rmse, absoluteErrorDivMean, relativeError)
     }
+  }
 
+  def nearestNeighbours(neighboursNumber: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
+    override val name: String = s"nearestNeighbours$neighboursNumber"
+    override val runs: Int = runsQuantity
+
+    override def function(inputFilename: String): Error = {
+      runRegressionNearestNeighbourWith(neighboursNumber)(inputFilename)
+      Error(rmse, absoluteErrorDivMean, relativeError)
+    }
   }
 
 }

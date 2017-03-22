@@ -1,9 +1,12 @@
 import argparse
-import math
 import random
+
+import math
 from statistics import mean
 
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.neighbors import RadiusNeighborsRegressor
+
 
 from regression_utils import read_from_input_file, write_error_file
 
@@ -19,10 +22,11 @@ parser.add_argument('--abs_div_mean', dest='abs_div_mean_error_file', default='a
                     help='absolute error divided by mean output file')
 parser.add_argument('--relative', dest='relative_error_file', default='relativeError.csv', required=False,
                     help='relative error output file')
-parser.add_argument('-m', '--max-depth', dest='max_depth', default='10', required=False, help='max depth')
-
+parser.add_argument('-n', '--neighbours', dest='neighbours', default='10', required=False, help='neighbours number')
 args = parser.parse_args()
-max_depth = int(args.max_depth)
+
+neighbours_number = int(args.neighbours)
+
 
 data = read_from_input_file(args.input_file)
 random.shuffle(data)  # shuffles in place
@@ -37,16 +41,19 @@ print("train size = " + str(m_train) + ", test size = " + str(m_test))
 
 y = list(map(lambda elem: elem[0], train_data))
 x = list(map(lambda elem: elem[1:], train_data))
-# print("x[0]=" + str(x[0]))
-# print("y[:10]=" + str(y[:10]))
 
-regression = DecisionTreeRegressor(max_depth=max_depth)
+
+RadiusNeighborsRegressor()
+
+regression = KNeighborsRegressor(n_neighbors=neighbours_number)
 regression.fit(x, y)
+
 
 x_test = list(map(lambda elem: elem[1:], test_data))
 y_test = list(map(lambda elem: elem[0], test_data))
 y_predicted = regression.predict(x_test)
 print(list(zip(y_test, y_predicted))[:4])
+
 
 rmse = 0.0
 absolute_error_div_mean = 0.0

@@ -1,7 +1,10 @@
 package pl.edu.agh.workflowPerformance.utils
 
+import java.nio.file.{Files, Paths}
+
 import com.typesafe.scalalogging.StrictLogging
 
+import scala.concurrent.{ExecutionContext, Future}
 import scala.language.postfixOps
 import scala.reflect.io.File
 import scala.sys.process._
@@ -14,20 +17,27 @@ trait PlotUtils extends StrictLogging {
 
   import PlotUtils._
 
-  def makeComparisonPlot(title: String, outputFile: String, comparisonFile: String = "tmp/comparison.csv"): Unit = {
-    logger.debug(s"Making plot $title")
+  implicit val executionContext: ExecutionContext
+
+  def makeComparisonPlot(title: String, outputFile: String, newComparisonFile: String,
+                         comparisonFile: String = "tmp/comparison.csv"): Unit = {
     File(outputFile).parent.createDirectory()
-    invokePythonComparisonPlot(title, outputFile, comparisonFile)
+    Files.copy(Paths.get(comparisonFile), Paths.get(newComparisonFile))
+
+    Future {
+      logger.debug(s"Making plot $title")
+      invokePythonComparisonPlot(title, outputFile, newComparisonFile)
+    }
   }
 
 }
 
 object PlotUtils {
 
-  private val comparison_plot_file_maker = "src/main/python3/comparison_plot.py"
+  private val comparisonPlotFileMaker = "src/main/python3/comparison_plot.py"
 
   def invokePythonComparisonPlot(title: String, outputPath: String, comparisonFile: String): Unit = {
-    s"python3 $comparison_plot_file_maker -t $title -c $comparisonFile -o $outputPath" !
+    s"python3 $comparisonPlotFileMaker -t $title -c $comparisonFile -o $outputPath" !
   }
 
 }

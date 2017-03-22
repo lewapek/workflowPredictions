@@ -31,6 +31,11 @@ object ExternalRegressionExecutor {
     rmse
   }
 
+  def runRegressionNearestNeighbourWith(neighboursNumber: Int = 10)(inputFilename: String): Double = {
+    s"python3 $decisionTreeRegressionPrefix/regression_nearest_neighbours.py -n $neighboursNumber -i $inputFilename".!
+    rmse
+  }
+
   def rmse: Double = {
     doubleFrom(Source.fromFile("tmp/rmse.csv").getLines().toList.head)
   }
