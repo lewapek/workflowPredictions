@@ -26,13 +26,23 @@ object ExternalRegressionExecutor {
     rmse
   }
 
-  def runRegressionDecisionTreeWith(treeMaxDepth: Int = 10)(inputFilename: String): Double = {
+  def runRegressionDecisionTreeWith(treeMaxDepth: Int)(inputFilename: String): Double = {
     s"python3 $decisionTreeRegressionPrefix/regression_decision_tree.py -m $treeMaxDepth -i $inputFilename".!
     rmse
   }
 
-  def runRegressionNearestNeighbourWith(neighboursNumber: Int = 10)(inputFilename: String): Double = {
-    s"python3 $decisionTreeRegressionPrefix/regression_nearest_neighbours.py -n $neighboursNumber -i $inputFilename".!
+  def runRegressionNearestNeighbourWith(neighboursNumber: Int, algorithm: String)(inputFilename: String): Double = {
+    s"python3 $decisionTreeRegressionPrefix/regression_nearest_neighbours.py -n $neighboursNumber -a $algorithm -i $inputFilename".!
+    rmse
+  }
+
+  def runRegressionSvmWith(kernel: String, c: Double, epsilon: Double)(inputFilename: String): Double = {
+    s"python3 $decisionTreeRegressionPrefix/regression_svm.py -k $kernel -C $c -e $epsilon -i $inputFilename".!
+    rmse
+  }
+
+  def runRegressionMlpWith(layers: Int, layerSize: Int)(inputFilename: String): Double = {
+    s"python3 $decisionTreeRegressionPrefix/regression_mlp.py -l $layers -s $layerSize -i $inputFilename".!
     rmse
   }
 

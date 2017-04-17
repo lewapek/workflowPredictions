@@ -1,6 +1,6 @@
 package pl.edu.agh.workflowPerformance.workflows.logs.regression
 
-import pl.edu.agh.workflowPerformance.workflows.Error
+import pl.edu.agh.workflowPerformance.workflows.Errors
 
 /**
   * @author lewap
@@ -11,6 +11,6 @@ abstract class Regression {
   val name: String
   val runs: Int
 
-  def function(inputFilename: String): Error
+  def function(inputFilename: String): Errors
 
 }

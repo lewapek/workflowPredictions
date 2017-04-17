@@ -3,7 +3,7 @@ package pl.edu.agh.workflowPerformance.workflows.logs.regression
 import com.typesafe.scalalogging.StrictLogging
 import pl.edu.agh.workflowPerformance.Settings
 import pl.edu.agh.workflowPerformance.utils.{CsvWriter, FileUtils, PlotUtils}
-import pl.edu.agh.workflowPerformance.workflows.{ConverterError, Error, RegressionError, TaskError}
+import pl.edu.agh.workflowPerformance.workflows.{ConverterError, Errors, RegressionError, TaskError}
 
 import scala.concurrent.ExecutionContext
 import scala.io.Source
@@ -98,7 +98,7 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
     } else errors.map(_.relative).sum / regression.runs
     logger.debug(s"Errors: rmse: $rmse, abs div mean: $absDivMean, relative: $relativeError, runs: ${regression.runs}")
 
-    RegressionError(regression.name, Error(rmse, absDivMean, relativeError, regression.runs))
+    RegressionError(regression.name, Errors(rmse, absDivMean, relativeError, regression.runs))
   }
 
 }

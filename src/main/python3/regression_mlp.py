@@ -1,11 +1,9 @@
 import argparse
-import random
-
 import math
+import random
 from statistics import mean
 
-from sklearn.neighbors import KNeighborsRegressor
-
+from sklearn.neural_network import MLPRegressor
 
 from regression_utils import read_from_input_file, write_error_file
 
@@ -21,12 +19,15 @@ parser.add_argument('--abs_div_mean', dest='abs_div_mean_error_file', default='a
                     help='absolute error divided by mean output file')
 parser.add_argument('--relative', dest='relative_error_file', default='relativeError.csv', required=False,
                     help='relative error output file')
-parser.add_argument('-n', '--neighbours', dest='neighbours', default='10', required=False, help='neighbours number')
-parser.add_argument('-a', '--algorithm', dest='algorithm', default='auto', required=False, help='algorithm')
+parser.add_argument('-a', '--algorithm', dest='algorithm_solver', default='adam', required=False, help='solver')
+parser.add_argument('-l', '--layers', dest='hidden_layers', default='1', required=False, help='hidden_layers')
+parser.add_argument('-s', '--layer_size', dest='layer_size', default='100', required=False, help='layer_size')
 args = parser.parse_args()
 
-neighbours_number = int(args.neighbours)
-algorithm = args.algorithm
+solver = args.algorithm_solver
+hidden_layers = int(args.hidden_layers)
+layer_size = int(args.layer_size)
+hidden_layer_sizes = [layer_size for _ in range(hidden_layers)]
 
 data = read_from_input_file(args.input_file)
 random.shuffle(data)  # shuffles in place
@@ -42,15 +43,13 @@ print("train size = " + str(m_train) + ", test size = " + str(m_test))
 y = list(map(lambda elem: elem[0], train_data))
 x = list(map(lambda elem: elem[1:], train_data))
 
-regression = KNeighborsRegressor(n_neighbors=neighbours_number, algorithm=algorithm)
+regression = MLPRegressor(hidden_layer_sizes=hidden_layer_sizes, solver=solver)
 regression.fit(x, y)
-
 
 x_test = list(map(lambda elem: elem[1:], test_data))
 y_test = list(map(lambda elem: elem[0], test_data))
 y_predicted = regression.predict(x_test)
 print(list(zip(y_test, y_predicted))[:4])
-
 
 rmse = 0.0
 absolute_error_div_mean = 0.0

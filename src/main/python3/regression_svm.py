@@ -4,8 +4,7 @@ import random
 import math
 from statistics import mean
 
-from sklearn.neighbors import KNeighborsRegressor
-
+from sklearn.svm import SVR
 
 from regression_utils import read_from_input_file, write_error_file
 
@@ -21,12 +20,14 @@ parser.add_argument('--abs_div_mean', dest='abs_div_mean_error_file', default='a
                     help='absolute error divided by mean output file')
 parser.add_argument('--relative', dest='relative_error_file', default='relativeError.csv', required=False,
                     help='relative error output file')
-parser.add_argument('-n', '--neighbours', dest='neighbours', default='10', required=False, help='neighbours number')
-parser.add_argument('-a', '--algorithm', dest='algorithm', default='auto', required=False, help='algorithm')
+parser.add_argument('-k', '--kernel', dest='kernel', default='rbf', required=False, help='kernel')
+parser.add_argument('-C', '--c_param', dest='c', default='1.0', required=False, help='C parameter')
+parser.add_argument('-e', '--epsilon', dest='epsilon', default='0.1', required=False, help='epsilon parameter')
 args = parser.parse_args()
 
-neighbours_number = int(args.neighbours)
-algorithm = args.algorithm
+kernel = args.kernel
+c = float(args.c)
+epsilon = float(args.epsilon)
 
 data = read_from_input_file(args.input_file)
 random.shuffle(data)  # shuffles in place
@@ -42,7 +43,7 @@ print("train size = " + str(m_train) + ", test size = " + str(m_test))
 y = list(map(lambda elem: elem[0], train_data))
 x = list(map(lambda elem: elem[1:], train_data))
 
-regression = KNeighborsRegressor(n_neighbors=neighbours_number, algorithm=algorithm)
+regression = SVR(kernel=kernel, C=c, epsilon=epsilon)
 regression.fit(x, y)
 
 
@@ -50,7 +51,6 @@ x_test = list(map(lambda elem: elem[1:], test_data))
 y_test = list(map(lambda elem: elem[0], test_data))
 y_predicted = regression.predict(x_test)
 print(list(zip(y_test, y_predicted))[:4])
-
 
 rmse = 0.0
 absolute_error_div_mean = 0.0
