@@ -25,8 +25,8 @@ object SnsTasksTotalTimeRegressionRunner extends RegressionRunnerUtils[SnsTotalT
     Regressions.multilayerPerceptron(layers = 5, layerSize = 100, runsQuantity = 5)
   )
 
-  val cList = List(1.0, 10.0, 100.0, 1000.0)
-  val epsilonList = List(0.1, 0.01)
+  val cList = List[Double](1.0, 100.0, 1000.0, 10000.0)
+  val epsilonList = List[Double](0.5, 0.1, 0.01)
   val smv = cList flatMap { c =>
     epsilonList map { epsilon =>
       Regressions.svm(SvmKernels.Rbf, c = c, epsilon = epsilon, runsQuantity = 5)
@@ -38,7 +38,7 @@ object SnsTasksTotalTimeRegressionRunner extends RegressionRunnerUtils[SnsTotalT
     parseSnsTotalTimeRow(row)
 
   override val convertersRegression: Map[AbstractFeatureConverter[SnsTotalTimeRow], List[Regression]] = Map(
-    ConverterLinearFull -> List(normalEquations, gradientDescent, decisionTree, nearestNeighbours5, nearestNeighbours10).++(smv)
+    ConverterLinearFull -> List(normalEquations, gradientDescent, decisionTree, nearestNeighbours5, nearestNeighbours10).++(smv).++(neuralNetworks)
   )
 
   override val inputDataDir: String = resourcesData("snsWorkflows/totalTimes")
