@@ -56,6 +56,7 @@ y = data(1:trainingRowsQuantity, 1);
 m = length(y);
 
 xTest = data(trainingRowsQuantity + 1:rowsQuantity, 2:columnsQuantity);
+indexTest = data(trainingRowsQuantity + 1:rowsQuantity, columnsQuantity);
 yTest = data(trainingRowsQuantity + 1:rowsQuantity, 1);
 mTest = length(yTest);
 
@@ -85,7 +86,7 @@ for i=1:mTest
   predicted(i) = xTest(i, :) * theta;
 end
 csvwrite("tmp/comparison.csv", [yTest, predicted]);
-
+csvwrite("tmp/comparisonIndexed.csv", [yTest, predicted, indexTest]);
 
 errors = (predicted - yTest) .^ 2;
 absolute_errors = abs(predicted - yTest);

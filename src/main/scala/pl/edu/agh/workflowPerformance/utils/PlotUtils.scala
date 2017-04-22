@@ -19,14 +19,21 @@ trait PlotUtils extends StrictLogging {
 
   implicit val executionContext: ExecutionContext
 
-  def makeComparisonPlot(title: String, outputFile: String, newComparisonFile: String,
-                         comparisonFile: String = "tmp/comparison.csv"): Unit = {
-    File(outputFile).parent.createDirectory()
-    Files.copy(Paths.get(comparisonFile), Paths.get(newComparisonFile))
+  def makeComparisonPlot(title: String, outputFileNoExtension: String, newComparisonFile: String,
+                         indexedMode: Boolean = false,
+                         comparisonFile: String = "tmp/comparison.csv",
+                         comparisonFileIndexed: String = "tmp/comparisonIndexed.csv"): Unit = {
+    File(outputFileNoExtension).parent.createDirectory()
+    val fileToCopy = if (indexedMode) comparisonFileIndexed else comparisonFile
+    Files.copy(Paths.get(fileToCopy), Paths.get(newComparisonFile))
 
     Future {
       logger.debug(s"Making plot $title")
-      invokePythonComparisonPlot(title, outputFile, newComparisonFile)
+      if (indexedMode) {
+        invokePythonComparisonPlotWithIndexingMode(title, outputFileNoExtension, newComparisonFile)
+      } else {
+        invokePythonComparisonPlot(title, outputFileNoExtension, newComparisonFile)
+      }
     }
   }
 
@@ -38,6 +45,10 @@ object PlotUtils {
 
   def invokePythonComparisonPlot(title: String, outputPath: String, comparisonFile: String): Unit = {
     s"python3 $comparisonPlotFileMaker -t $title -c $comparisonFile -o $outputPath" !
+  }
+
+  def invokePythonComparisonPlotWithIndexingMode(title: String, outputPath: String, comparisonFile: String): Unit = {
+    s"python3 $comparisonPlotFileMaker -t $title -c $comparisonFile -o $outputPath -i True" !
   }
 
 }

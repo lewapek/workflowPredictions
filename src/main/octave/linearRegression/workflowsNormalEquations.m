@@ -18,6 +18,7 @@ end
 data = csvread(filename);
 columnsQuantity = size(data, 2);
 x = data(:, 2:columnsQuantity);
+index = data(:, columnsQuantity);
 y = data(:, 1);
 m = length(y);
 
@@ -33,6 +34,7 @@ for i=1:m
   predicted(i) = x(i, :) * theta;
 end
 csvwrite("tmp/comparison.csv", [y, predicted]);
+csvwrite("tmp/comparisonIndexed.csv", [y, predicted, index]);
 
 errors = (predicted - y) .^ 2;
 absolute_errors = abs(predicted - y);

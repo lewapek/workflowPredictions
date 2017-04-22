@@ -26,6 +26,8 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
   val headerInInputFiles: Boolean
   val outputDir: String
 
+  val indexingComparisonPlotMode: Boolean = false
+
   lazy val resultDir = outputDir + "/" + currentDateStringUnderscores()
   lazy val resultDirCsv = resultDir + "/csv"
   lazy val resultDirFormatted = resultDir + "/formatted"
@@ -85,8 +87,9 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
       val outputFilesPrefix = s"$plotsDir/$task/${regression.name}/${converter.name}_run$run"
       makeComparisonPlot(
         title = s"${task}_${converter.name}_${regression.name}_comparison_run$run",
-        outputFile = s"$outputFilesPrefix.png",
-        newComparisonFile = s"$outputFilesPrefix.csv"
+        outputFileNoExtension = s"$outputFilesPrefix",
+        newComparisonFile = s"$outputFilesPrefix.csv",
+        indexedMode = indexingComparisonPlotMode
       )
 
       error

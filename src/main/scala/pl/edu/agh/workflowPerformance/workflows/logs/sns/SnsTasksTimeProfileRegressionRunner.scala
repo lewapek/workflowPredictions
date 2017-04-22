@@ -16,6 +16,8 @@ object SnsTasksTimeProfileRegressionRunner extends RegressionRunnerUtils[SnsProf
   val nearestNeighboursAuto = Regressions.nearestNeighbours(5, NearestNeighbourAlgorithms.Auto, runsQuantity = 5)
   val svm = Regressions.svm(SvmKernels.Rbf, 5)
 
+  override val indexingComparisonPlotMode: Boolean = true
+
   override def parseRowString(row: String): SnsProfileRow =
     parseSnsProfileRow(row)
 

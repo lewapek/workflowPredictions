@@ -16,6 +16,8 @@ parser.add_argument('-i', '--input', dest='input_file', default="tmp/taskLogsInp
                     help='input file')
 parser.add_argument('-c', '--comparison', dest='comparison_file', default="tmp/comparison.csv", required=False,
                     help='comparison file')
+parser.add_argument('--comparison_indexed', dest='comparison_file_indexed', default="tmp/comparisonIndexed.csv",
+                    required=False, help='comparison file')
 parser.add_argument('--rmse', dest='rmse_file', default='rmse.csv', required=False, help='rmse output file')
 parser.add_argument('--abs_div_mean', dest='abs_div_mean_error_file', default='absDivMean.csv', required=False,
                     help='absolute error divided by mean output file')
@@ -46,19 +48,21 @@ regression = KNeighborsRegressor(n_neighbors=neighbours_number, algorithm=algori
 regression.fit(x, y)
 
 
+index_test = list(map(lambda elem: elem[-1], test_data))
 x_test = list(map(lambda elem: elem[1:], test_data))
 y_test = list(map(lambda elem: elem[0], test_data))
 y_predicted = regression.predict(x_test)
 print(list(zip(y_test, y_predicted))[:4])
-
 
 rmse = 0.0
 absolute_error_div_mean = 0.0
 relative = 0.0
 relative_is_infinity = False
 comparison_file = open(args.comparison_file, "w")
-for test, predicted in zip(y_test, y_predicted):
+comparison_file_indexed = open(args.comparison_file_indexed, "w")
+for test, predicted, index in zip(y_test, y_predicted, index_test):
     comparison_file.write(str(test) + "," + str(predicted) + "\n")
+    comparison_file_indexed.write(str(test) + "," + str(predicted) + "," + str(index) + "\n")
 
     absolute_error_div_mean += math.fabs(predicted - test)
     rmse += math.pow(test - predicted, 2)
@@ -69,6 +73,7 @@ for test, predicted in zip(y_test, y_predicted):
             relative_is_infinity = True
 
 comparison_file.close()
+comparison_file_indexed.close()
 
 rmse = math.sqrt(rmse / m_test)
 absolute_error_div_mean = (absolute_error_div_mean / m_test) / mean(y_test)
