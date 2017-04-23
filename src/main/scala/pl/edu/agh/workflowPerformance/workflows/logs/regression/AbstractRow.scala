@@ -5,5 +5,5 @@ package pl.edu.agh.workflowPerformance.workflows.logs.regression
   * @since 16.02.17
   */
 trait AbstractRow {
-  val time: Double
+  val y: Double
 }

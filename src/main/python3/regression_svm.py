@@ -10,6 +10,7 @@ from regression_utils import read_from_input_file, write_error_file
 
 parser = argparse.ArgumentParser(description="Decision tree regression")
 
+parser.add_argument('-s', '--split', dest='split', default=None, required=False, help='split training:testing')
 parser.add_argument('-t', '--tmp_dir', dest='tmp_dir', default="tmp", required=False, help='input file')
 parser.add_argument('-i', '--input', dest='input_file', default="tmp/taskLogsInput.csv", required=False,
                     help='input file')
@@ -32,10 +33,15 @@ c = float(args.c)
 epsilon = float(args.epsilon)
 
 data = read_from_input_file(args.input_file)
-random.shuffle(data)  # shuffles in place
-
 m = len(data)
-split = math.ceil(0.8 * m)
+
+if args.split is None:
+    print("Shuffling and calculating split")
+    random.shuffle(data)  # shuffles in place
+    split = math.ceil(0.8 * m)
+else:
+    print("Getting split from argument, split = " + args.split)
+    split = int(args.split)
 train_data = data[:split]
 test_data = data[split:]
 m_train = len(train_data)
@@ -47,7 +53,6 @@ x = list(map(lambda elem: elem[1:], train_data))
 
 regression = SVR(kernel=kernel, C=c, epsilon=epsilon)
 regression.fit(x, y)
-
 
 index_test = list(map(lambda elem: elem[-1], test_data))
 x_test = list(map(lambda elem: elem[1:], test_data))

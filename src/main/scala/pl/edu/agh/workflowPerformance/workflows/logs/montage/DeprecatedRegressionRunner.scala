@@ -27,10 +27,14 @@ object DeprecatedRegressionRunner extends Settings with CsvWriter with FileUtils
   val resultsDirectory = "results/montageTasks"
   val subdirectory = currentDateStringUnderscores()
 
+  def gradientDescent(filename: String): Double = ExternalRegressionExecutor.runLinearRegressionGradientDescentWith(filename)
+
+  def normalEquations(filename: String): Double = ExternalRegressionExecutor.runNormalEquationsWith(filename)
+
   def main(args: Array[String]): Unit = {
     val regressionFunctions: List[(String, RegressionFunction)] = List(
-      "gradientDescent" -> ExternalRegressionExecutor.runLinearRegressionGradientDescentWith,
-      "normalEquations" -> ExternalRegressionExecutor.runNormalEquationsWith
+      "gradientDescent" -> gradientDescent,
+      "normalEquations" -> normalEquations
     )
     val converters = List(
       ConverterLinearFull,
@@ -90,7 +94,7 @@ object DeprecatedRegressionRunner extends Settings with CsvWriter with FileUtils
   }
 
   private def runSingleTask(name: String,
-                            regression: RegressionFunction = ExternalRegressionExecutor.runLinearRegressionGradientDescentWith,
+                            regression: RegressionFunction = gradientDescent,
                             converter: AbstractFeatureConverter[MontageRow]): (Double, Double) = {
     logger.debug("Running task: {}", name)
     val path = AllToTaskLogsRunner.taskLogsDirectory + "/" + name

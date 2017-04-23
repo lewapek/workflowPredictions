@@ -3,6 +3,7 @@ package pl.edu.agh.workflowPerformance.utils
 import java.nio.file.{Files, Paths}
 
 import com.typesafe.scalalogging.StrictLogging
+import pl.edu.agh.workflowPerformance.workflows.logs.regression.StatsUtils
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.language.postfixOps
@@ -13,7 +14,7 @@ import scala.sys.process._
   * @author lewap
   * @since 28.02.17
   */
-trait PlotUtils extends StrictLogging {
+trait PlotUtils extends StatsUtils with StrictLogging {
 
   import PlotUtils._
 
@@ -28,6 +29,11 @@ trait PlotUtils extends StrictLogging {
     Files.copy(Paths.get(fileToCopy), Paths.get(newComparisonFile))
 
     Future {
+      val errors = calculateErrorsFrom(newComparisonFile)
+      File(outputFileNoExtension + "_errors.csv").writeAll(
+        errors.rmse + "," + errors.absoluteDivMean + "," + errors.relative + "\n"
+      )
+
       logger.debug(s"Making plot $title")
       if (indexedMode) {
         invokePythonComparisonPlotWithIndexingMode(title, outputFileNoExtension, newComparisonFile)

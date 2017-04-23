@@ -14,53 +14,69 @@ object ExternalRegressionExecutor {
 
   private val octavePrefix = "src/main/octave"
   private val linearRegressionPrefix = octavePrefix + "/linearRegression"
-  private val decisionTreeRegressionPrefix = "src/main/python3"
+  private val pythonRegressionsPrefix = "src/main/python3"
 
-  def runNormalEquationsWith(inputFilename: String): Double = {
+  def runNormalEquationsWith(inputFilename: String, split: Option[Int] = None): Double = {
     s"octave $linearRegressionPrefix/workflowsNormalEquations.m $inputFilename".!
     rmse
   }
 
-  def runLinearRegressionGradientDescentWith(inputFilename: String): Double = {
+  def runLinearRegressionGradientDescentWith(inputFilename: String, split: Option[Int] = None): Double = {
     s"octave $linearRegressionPrefix/workflowsLinearRegression.m $inputFilename".!
     rmse
   }
 
-  def runRegressionDecisionTreeWith(treeMaxDepth: Int)(inputFilename: String): Double = {
-    s"python3 $decisionTreeRegressionPrefix/regression_decision_tree.py -m $treeMaxDepth -i $inputFilename".!
+  def runRegressionDecisionTreeWith(treeMaxDepth: Int)
+                                   (inputFilename: String, split: Option[Int] = None): Double = {
+    split.fold {
+      s"python3 $pythonRegressionsPrefix/regression_decision_tree.py -m $treeMaxDepth -i $inputFilename".!
+    } { splitParam =>
+      s"python3 $pythonRegressionsPrefix/regression_decision_tree.py -m $treeMaxDepth -i $inputFilename -s $splitParam".!
+    }
     rmse
   }
 
-  def runRegressionNearestNeighbourWith(neighboursNumber: Int, algorithm: String)(inputFilename: String): Double = {
-    s"python3 $decisionTreeRegressionPrefix/regression_nearest_neighbours.py -n $neighboursNumber -a $algorithm -i $inputFilename".!
+  def runRegressionNearestNeighbourWith(neighboursNumber: Int, algorithm: String)
+                                       (inputFilename: String, split: Option[Int] = None): Double = {
+    split.fold {
+      s"python3 $pythonRegressionsPrefix/regression_nearest_neighbours.py -n $neighboursNumber -a $algorithm -i $inputFilename".!
+    } { splitParam =>
+      s"python3 $pythonRegressionsPrefix/regression_nearest_neighbours.py -n $neighboursNumber -a $algorithm -i $inputFilename -s $splitParam".!
+    }
     rmse
   }
 
-  def runRegressionSvmWith(kernel: String, c: Double, epsilon: Double)(inputFilename: String): Double = {
-    s"python3 $decisionTreeRegressionPrefix/regression_svm.py -k $kernel -C $c -e $epsilon -i $inputFilename".!
+  def runRegressionSvmWith(kernel: String, c: Double, epsilon: Double)
+                          (inputFilename: String, split: Option[Int] = None): Double = {
+    split.fold {
+      s"python3 $pythonRegressionsPrefix/regression_svm.py -k $kernel -C $c -e $epsilon -i $inputFilename".!
+    } { splitParam =>
+      s"python3 $pythonRegressionsPrefix/regression_svm.py -k $kernel -C $c -e $epsilon -i $inputFilename -s $splitParam".!
+    }
     rmse
   }
 
-  def runRegressionMlpWith(layers: Int, layerSize: Int)(inputFilename: String): Double = {
-    s"python3 $decisionTreeRegressionPrefix/regression_mlp.py -l $layers -s $layerSize -i $inputFilename".!
+  def runRegressionMlpWith(layers: Int, layerSize: Int)
+                          (inputFilename: String, split: Option[Int] = None): Double = {
+    split.fold {
+      s"python3 $pythonRegressionsPrefix/regression_mlp.py -l $layers -S $layerSize -i $inputFilename".!
+    } { splitParam =>
+      s"python3 $pythonRegressionsPrefix/regression_mlp.py -l $layers -S $layerSize -i $inputFilename -s $splitParam".!
+    }
     rmse
   }
 
-  def rmse: Double = {
+  def rmse: Double =
     doubleFrom(Source.fromFile("tmp/rmse.csv").getLines().toList.head)
-  }
 
-  def absoluteErrorDivMean: Double = {
+  def absoluteErrorDivMean: Double =
     doubleFrom(Source.fromFile("tmp/absDivMean.csv").getLines().toList.head)
-  }
 
-  def relativeError: Double = {
+  def relativeError: Double =
     doubleFrom(Source.fromFile("tmp/relativeError.csv").getLines().toList.head)
-  }
 
-  def theta: List[Double] = {
+  def theta: List[Double] =
     Source.fromFile("tmp/theta.csv").getLines().map(_.toDouble).toList
-  }
 
   private def doubleFrom(string: String): Double = {
     if (string.toLowerCase() == "inf") {

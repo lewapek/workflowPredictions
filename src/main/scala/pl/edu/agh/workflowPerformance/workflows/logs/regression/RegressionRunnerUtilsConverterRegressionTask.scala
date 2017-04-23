@@ -26,10 +26,19 @@ trait RegressionRunnerUtilsConverterRegressionTask[T <: AbstractRow] extends Fil
   lazy val resultDir = outputDir + "/" + currentDateStringUnderscores()
   val inputFilename = tmpFile("taskLogsInput.csv")
 
+  def gradientDescent(filename: String): Double =
+    ExternalRegressionExecutor.runLinearRegressionGradientDescentWith(filename)
+
+  def normalEquations(filename: String): Double =
+    ExternalRegressionExecutor.runNormalEquationsWith(filename)
+
+  def decisionTree(filename: String): Double =
+    ExternalRegressionExecutor.runRegressionDecisionTreeWith(treeMaxDepth = 10)(filename)
+
   val regressionFunctions: List[(String, RegressionFunction)] = List(
-//    "gradientDescent" -> Octave.runLinearRegressionGradientDescentWith,
-//    "normalEquations" -> Octave.runNormalEquationsWith,
-    "decisionTree" -> ExternalRegressionExecutor.runRegressionDecisionTreeWith(treeMaxDepth = 10)
+    //    "gradientDescent" -> Octave.runLinearRegressionGradientDescentWith,
+    //    "normalEquations" -> Octave.runNormalEquationsWith,
+    "decisionTree" -> decisionTree
   )
 
   def runAllTasks(): Unit =
@@ -76,7 +85,7 @@ trait RegressionRunnerUtilsConverterRegressionTask[T <: AbstractRow] extends Fil
   }
 
   private def runSingleTask(name: String,
-                            regression: RegressionFunction = ExternalRegressionExecutor.runLinearRegressionGradientDescentWith,
+                            regression: RegressionFunction = gradientDescent,
                             converter: AbstractFeatureConverter[T]): (Double, Double) = {
     logger.debug("Running task: {}", name)
     val path = inputDataDir + "/" + name

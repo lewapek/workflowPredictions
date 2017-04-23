@@ -27,7 +27,7 @@ trait SnsRowParser {
     val pointInTime = splitLine(6).toDouble
     val cumulativeSTime = splitLine(8).toDouble
 
-    SnsProfileRow(time = cumulativeSTime, atoms, cores, timesteps, outputFrequency, pointInTime)
+    SnsProfileRow(y = cumulativeSTime, atoms, cores, timesteps, outputFrequency, pointInTime)
   }
 }
 

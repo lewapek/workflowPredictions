@@ -1,0 +1,7 @@
+ConverterLinearFull
+atoms :: cores :: timesteps :: outputFrequency :: pointInTime
+                task           rmse     absDivMean       relative           runs
+               namd2           0.35           4.20          60.69              5
+               namd3           0.17           3.21          33.38              5
+            sassena5           0.20           3.13          -1.00              5
+            sassena6           0.30           6.73         485.68              5

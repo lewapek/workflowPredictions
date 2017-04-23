@@ -26,6 +26,7 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
   val headerInInputFiles: Boolean
   val outputDir: String
 
+  val tasksSplitParameter: Map[String, Int] = Map()
   val indexingComparisonPlotMode: Boolean = false
 
   lazy val resultDir = outputDir + "/" + currentDateStringUnderscores()
@@ -78,10 +79,11 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
   private def runSingleRegressionFunction(task: String,
                                           converter: AbstractFeatureConverter[T],
                                           regression: Regression): RegressionError = {
-    logger.info(s"Running regression ${regression.name}")
+    val splitParameter = tasksSplitParameter.get(task)
+    logger.info(s"Running regression ${regression.name}, split = $splitParameter")
     val errors = 1 to regression.runs map { run =>
       logger.debug(s"Run #$run")
-      val error = regression.function(inputFilename)
+      val error = regression.function(inputFilename, splitParameter)
       logger.debug(s"Error #$run = $error")
 
       val outputFilesPrefix = s"$plotsDir/$task/${regression.name}/${converter.name}_run$run"

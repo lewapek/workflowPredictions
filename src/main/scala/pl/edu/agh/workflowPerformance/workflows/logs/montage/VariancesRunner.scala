@@ -42,7 +42,7 @@ object VariancesRunner extends MontageRowParser with FileUtils with StrictLoggin
 
     val parsed: List[InstanceMontageTime] = linesIterator.map(line => {
       val row = parseMontageRow(line)
-      InstanceMontageTime(row.instance.name, row.montage, row.time)
+      InstanceMontageTime(row.instance.name, row.montage, row.y)
     }).toList
 
     val distinctSeries = parsed.foldLeft(Map.empty[InstanceMontage, TotalTime]) { (map, instanceMontageTime) =>

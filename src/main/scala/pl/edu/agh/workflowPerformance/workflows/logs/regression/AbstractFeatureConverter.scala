@@ -12,7 +12,7 @@ abstract class AbstractFeatureConverter[T <: AbstractRow] {
   val description: String
 
   def convertWithTime(row: T): List[AnyVal] =
-    row.time :: convert(row)
+    row.y :: convert(row)
 
   def convert(row: T): List[AnyVal]
 

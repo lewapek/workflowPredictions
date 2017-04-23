@@ -13,8 +13,8 @@ object Regressions {
     override val name: String = "normalEquations"
     override val runs: Int = 1
 
-    override def function(inputFilename: String): Errors = {
-      runNormalEquationsWith(inputFilename)
+    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
+      runNormalEquationsWith(inputFilename, split)
       Errors(rmse, absoluteErrorDivMean, relativeError)
     }
   }
@@ -23,8 +23,8 @@ object Regressions {
     override val name: String = "gradientDescent"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String): Errors = {
-      runLinearRegressionGradientDescentWith(inputFilename)
+    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
+      runLinearRegressionGradientDescentWith(inputFilename, split)
       Errors(rmse, absoluteErrorDivMean, relativeError)
     }
   }
@@ -33,8 +33,8 @@ object Regressions {
     override val name: String = s"decisionTree_$maxDepth"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String): Errors = {
-      runRegressionDecisionTreeWith(treeMaxDepth = maxDepth)(inputFilename)
+    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
+      runRegressionDecisionTreeWith(treeMaxDepth = maxDepth)(inputFilename, split)
       Errors(rmse, absoluteErrorDivMean, relativeError)
     }
   }
@@ -45,8 +45,8 @@ object Regressions {
     override val name: String = s"nearestNeighbours_${neighboursNumber}_${algorithm.name}"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String): Errors = {
-      runRegressionNearestNeighbourWith(neighboursNumber, algorithm.name)(inputFilename)
+    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
+      runRegressionNearestNeighbourWith(neighboursNumber, algorithm.name)(inputFilename, split)
       Errors(rmse, absoluteErrorDivMean, relativeError)
     }
   }
@@ -58,8 +58,8 @@ object Regressions {
     override val name: String = s"svm_${kernel.name}_c${c}_eps$epsilon"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String): Errors = {
-      runRegressionSvmWith(kernel.name, c, epsilon)(inputFilename)
+    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
+      runRegressionSvmWith(kernel.name, c, epsilon)(inputFilename, split)
       Errors(rmse, absoluteErrorDivMean, relativeError)
     }
   }
@@ -68,8 +68,8 @@ object Regressions {
     override val name: String = s"mlp_${layers}_$layerSize"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String): Errors = {
-      runRegressionMlpWith(layers, layerSize)(inputFilename)
+    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
+      runRegressionMlpWith(layers, layerSize)(inputFilename, split)
       Errors(rmse, absoluteErrorDivMean, relativeError)
     }
   }

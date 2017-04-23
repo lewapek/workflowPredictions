@@ -7,7 +7,7 @@ import pl.edu.agh.workflowPerformance.workflows.logs.regression.AbstractRow
   * @author lewap
   * @since 08.01.17
   */
-case class MontageRow(time: Double,
+case class MontageRow(y: Double,
                       performance: Double,
                       instance: Instance,
                       montage: Double,
@@ -15,11 +15,11 @@ case class MontageRow(time: Double,
                       outputDataSize: Long) extends AbstractRow {
 
   def asFeatureVectorWithTime: List[AnyVal] = {
-    time :: instance.asFeatureVector ::: montage :: inputDataSize :: outputDataSize :: Nil
+    y :: instance.asFeatureVector ::: montage :: inputDataSize :: outputDataSize :: Nil
   }
 
   def asFeatureVectorMontageSquareWithTime: List[AnyVal] = {
-    time :: instance.asFeatureVector ::: (montage * montage) :: inputDataSize :: outputDataSize :: Nil
+    y :: instance.asFeatureVector ::: (montage * montage) :: inputDataSize :: outputDataSize :: Nil
   }
 
   def asFeatureVectorWithPerformance: List[AnyVal] = {

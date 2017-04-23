@@ -9,6 +9,7 @@ from regression_utils import read_from_input_file, write_error_file
 
 parser = argparse.ArgumentParser(description="Decision tree regression")
 
+parser.add_argument('-s', '--split', dest='split', default=None, required=False, help='split training:testing')
 parser.add_argument('-t', '--tmp_dir', dest='tmp_dir', default="tmp", required=False, help='input file')
 parser.add_argument('-i', '--input', dest='input_file', default="tmp/taskLogsInput.csv", required=False,
                     help='input file')
@@ -23,7 +24,7 @@ parser.add_argument('--relative', dest='relative_error_file', default='relativeE
                     help='relative error output file')
 parser.add_argument('-a', '--algorithm', dest='algorithm_solver', default='adam', required=False, help='solver')
 parser.add_argument('-l', '--layers', dest='hidden_layers', default='1', required=False, help='hidden_layers')
-parser.add_argument('-s', '--layer_size', dest='layer_size', default='100', required=False, help='layer_size')
+parser.add_argument('-S', '--layer_size', dest='layer_size', default='100', required=False, help='layer_size')
 args = parser.parse_args()
 
 solver = args.algorithm_solver
@@ -32,10 +33,15 @@ layer_size = int(args.layer_size)
 hidden_layer_sizes = [layer_size for _ in range(hidden_layers)]
 
 data = read_from_input_file(args.input_file)
-random.shuffle(data)  # shuffles in place
-
 m = len(data)
-split = math.ceil(0.8 * m)
+
+if args.split is None:
+    print("Shuffling and calculating split")
+    random.shuffle(data)  # shuffles in place
+    split = math.ceil(0.8 * m)
+else:
+    print("Getting split from argument, split = " + args.split)
+    split = int(args.split)
 train_data = data[:split]
 test_data = data[split:]
 m_train = len(train_data)

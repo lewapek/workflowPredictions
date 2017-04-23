@@ -11,6 +11,6 @@ abstract class Regression {
   val name: String
   val runs: Int
 
-  def function(inputFilename: String): Errors
+  def function(inputFilename: String, split: Option[Int] = None): Errors
 
 }
