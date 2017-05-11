@@ -29,9 +29,9 @@ object SnsTasksTimeProfileNnComparisonRunner extends RegressionRunnerUtils[SnsPr
   val nearestNeighbours10 = Regressions.nearestNeighbours(neighboursNumber = 10, runsQuantity = 1)
 
   val neuralNetworks = List(
-    Regressions.multilayerPerceptron(layers = 1, layerSize = 20, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 5, layerSize = 20, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 20, layerSize = 20, runsQuantity = 3)
+    Regressions.multilayerPerceptron(layers = 1, layerSize = 20, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 5, layerSize = 20, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 20, layerSize = 20, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3)
   )
 
   val cList = List[Double](1.0, 100.0)

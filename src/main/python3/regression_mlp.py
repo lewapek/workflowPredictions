@@ -23,6 +23,8 @@ parser.add_argument('--abs_div_mean', dest='abs_div_mean_error_file', default='a
 parser.add_argument('--relative', dest='relative_error_file', default='relativeError.csv', required=False,
                     help='relative error output file')
 parser.add_argument('-a', '--algorithm', dest='algorithm_solver', default='adam', required=False, help='solver')
+parser.add_argument('-m', '--max_iterations', dest='max_iterations', default='2000', required=False,
+                    help='max iterations')
 parser.add_argument('-l', '--layers', dest='hidden_layers', default='1', required=False, help='hidden_layers')
 parser.add_argument('-S', '--layer_size', dest='layer_size', default='100', required=False, help='layer_size')
 args = parser.parse_args()
@@ -30,6 +32,7 @@ args = parser.parse_args()
 solver = args.algorithm_solver
 hidden_layers = int(args.hidden_layers)
 layer_size = int(args.layer_size)
+max_iterations = int(args.max_iterations)
 hidden_layer_sizes = [layer_size for _ in range(hidden_layers)]
 
 data = read_from_input_file(args.input_file)
@@ -51,7 +54,7 @@ print("train size = " + str(m_train) + ", test size = " + str(m_test))
 y = list(map(lambda elem: elem[0], train_data))
 x = list(map(lambda elem: elem[1:], train_data))
 
-regression = MLPRegressor(hidden_layer_sizes=hidden_layer_sizes, solver=solver)
+regression = MLPRegressor(hidden_layer_sizes=hidden_layer_sizes, solver=solver, max_iter=max_iterations)
 regression.fit(x, y)
 
 index_test = list(map(lambda elem: elem[-1], test_data))

@@ -96,12 +96,12 @@ object ExternalRegressionExecutor {
     rmse
   }
 
-  def runRegressionMlpWith(layers: Int, layerSize: Int)
+  def runRegressionMlpWith(layers: Int, layerSize: Int, maxIterations: Int, solver: String)
                           (inputFilename: String, split: Option[Int] = None): Double = {
     split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_mlp.py -l $layers -S $layerSize -i $inputFilename".!
+      s"python3 $pythonRegressionsPrefix/regression_mlp.py -l $layers -S $layerSize -m $maxIterations -a $solver -i $inputFilename".!
     } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_mlp.py -l $layers -S $layerSize -i $inputFilename -s $splitParam".!
+      s"python3 $pythonRegressionsPrefix/regression_mlp.py -l $layers -S $layerSize -m $maxIterations -a $solver -i $inputFilename -s $splitParam".!
     }
     rmse
   }
