@@ -1,14 +1,16 @@
 package pl.edu.agh.workflowPerformance.workflows.logs.regression
 
-import pl.edu.agh.workflowPerformance.workflows.{ConverterError, RegressionError, TaskError}
+import pl.edu.agh.workflowPerformance.utils.PlotUtils
+import pl.edu.agh.workflowPerformance.workflows.{ConverterError, Errors, RegressionError, TaskError}
 
+import scala.collection.mutable
 import scala.reflect.io.File
 
 /**
   * @author lewap
   * @since 26.02.17
   */
-trait ErrorPersistence[T <: AbstractRow] {
+trait ErrorPersistence[T <: AbstractRow] extends PlotUtils {
   this: RegressionRunnerUtils[T] =>
 
   def persistErrorsFormatted(taskErrors: List[TaskError]): Unit = {
@@ -24,7 +26,7 @@ trait ErrorPersistence[T <: AbstractRow] {
       val absDivMean = regressionError.error.absoluteDivMean
       val relativeError = regressionError.error.relative
       val runs = regressionError.error.runs
-      file.appendAll(f"$taskName%20s$rmse%15.2f$absDivMean%15.2f$relativeError%15.2f$runs%15d\n")
+      file.appendAll(f"$taskName%20s$rmse%15.4f$absDivMean%15.4f$relativeError%15.4f$runs%15d\n")
     }
 
     persistErrors(taskErrors, resultDirFormatted, appendHeader, appendLine)
@@ -53,8 +55,9 @@ trait ErrorPersistence[T <: AbstractRow] {
                             appendLine: (File, RegressionError, String) => Unit,
                             fileExtension: Option[String] = None): Unit = {
     File(resultDir).createDirectory(force = true)
+    File(resultDirByTask).createDirectory(force = true)
 
-    val files = taskErrors.headOption map { taskError =>
+    val files: Map[(String, String), File] = taskErrors.headOption map { taskError =>
       taskError.converterErrors.foldLeft(Map.empty[(String, String), File]) { (map, converterError) =>
         val files = converterError.regressionErrors.foldLeft(Map.empty[(String, String), File]) { (map, regressionError) =>
           val path = resultDir + "/" + regressionError.regressionName + "_" + converterError.converterName
@@ -78,5 +81,39 @@ trait ErrorPersistence[T <: AbstractRow] {
         }
       }
     }
+
+    compareByTasks(taskErrors)
   }
+
+  private def compareByTasks(taskErrors: List[TaskError]): Unit = {
+    taskErrors foreach { taskError =>
+      val outputFilePrefix = resultDirByTask + "/" + taskError.taskName
+      val csvFile = File(outputFilePrefix + ".csv")
+      val compactErrors: Map[(String, String), Errors] = extractTaskErrorsFrom(taskError)
+
+      val header = "converter,regression,rmse,absoluteDivMean,relative,runs\n"
+      val printableErrors = compactErrors map { case ((converter, regression), errors) =>
+        converter + "," + regression + "," + errors.rmse + "," + errors.absoluteDivMean + "," + errors.relative + "," +
+          errors.runs
+      } mkString "\n"
+
+      csvFile.writeAll(header + printableErrors)
+      makeErrorComparisonPlot(
+        titlePrefix = taskError.taskName,
+        comparisonInputFile = csvFile.path,
+        outputFilePrefix = outputFilePrefix
+      )
+    }
+  }
+
+  private def extractTaskErrorsFrom(taskError: TaskError): Map[(String, String), Errors] = {
+    val result = mutable.Map.empty[(String, String), Errors]
+    taskError.converterErrors foreach { converterError =>
+      converterError.regressionErrors foreach { regressionError =>
+        result(converterError.converterName -> regressionError.regressionName) = regressionError.error
+      }
+    }
+    result.toMap
+  }
+
 }

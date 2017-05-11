@@ -43,18 +43,34 @@ trait PlotUtils extends StatsUtils with StrictLogging {
     }
   }
 
+  def makeErrorComparisonPlot(titlePrefix: String,
+                              comparisonInputFile: String,
+                              outputFilePrefix: String): Unit = {
+    logger.debug(s"Making error comparison plot with title prefix: $titlePrefix")
+    invokePythonErrorComparisonPlot(
+      title = titlePrefix,
+      outputPath = outputFilePrefix,
+      comparisonFile = comparisonInputFile
+    )
+  }
+
 }
 
 object PlotUtils {
 
-  private val comparisonPlotFileMaker = "src/main/python3/comparison_plot.py"
+  private val comparisonPlot = "src/main/python3/comparison_plot.py"
+  private val errorComparisonPlot = "src/main/python3/errors_comparison_plot.py"
 
   def invokePythonComparisonPlot(title: String, outputPath: String, comparisonFile: String): Unit = {
-    s"python3 $comparisonPlotFileMaker -t $title -c $comparisonFile -o $outputPath" !
+    s"python3 $comparisonPlot -t $title -c $comparisonFile -o $outputPath" !
   }
 
   def invokePythonComparisonPlotWithIndexingMode(title: String, outputPath: String, comparisonFile: String): Unit = {
-    s"python3 $comparisonPlotFileMaker -t $title -c $comparisonFile -o $outputPath -i True" !
+    s"python3 $comparisonPlot -t $title -c $comparisonFile -o $outputPath -i True" !
+  }
+
+  def invokePythonErrorComparisonPlot(title: String, outputPath: String, comparisonFile: String): Unit = {
+    s"python3 $errorComparisonPlot -t $title -c $comparisonFile -o $outputPath" !
   }
 
 }

@@ -32,6 +32,7 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
   lazy val resultDir = outputDir + "/" + currentDateStringUnderscores()
   lazy val resultDirCsv = resultDir + "/csv"
   lazy val resultDirFormatted = resultDir + "/formatted"
+  lazy val resultDirByTask = resultDir + "/tasks"
   lazy val plotsDir = resultDir + "/plots"
   val inputFilename = tmpFile("taskLogsInput.csv")
 

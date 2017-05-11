@@ -8,6 +8,9 @@ import pl.edu.agh.workflowPerformance.workflows.logs.sns.structure.SnsProfileRow
   * @since 14.02.17
   */
 object ConverterLinearFull extends AbstractFeatureConverter[SnsProfileRow] {
+
+  override val name: String = "full"
+
   override val description: String =
     "atoms :: cores :: timesteps :: outputFrequency :: pointInTime"
 

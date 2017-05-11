@@ -12,5 +12,6 @@ time = list(map(lambda line: float(line[2]), split))
 stime = list(map(lambda line: float(line[8]), split))
 predicted_stime = list(map(lambda line: float(line[9]), split))
 
-plot.plot(stime, '.')
+plot.plot(time, stime, '.', color='red')
+plot.plot(time, predicted_stime, '.', color='blue')
 plot.show()

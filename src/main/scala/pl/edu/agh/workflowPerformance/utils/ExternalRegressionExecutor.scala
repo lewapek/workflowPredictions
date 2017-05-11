@@ -36,6 +36,46 @@ object ExternalRegressionExecutor {
     rmse
   }
 
+  def runRegressionRandomForestWith(treeMaxDepth: Int)
+                                   (inputFilename: String, split: Option[Int] = None): Double = {
+    split.fold {
+      s"python3 $pythonRegressionsPrefix/regression_random_forest.py -m $treeMaxDepth -i $inputFilename".!
+    } { splitParam =>
+      s"python3 $pythonRegressionsPrefix/regression_random_forest.py -m $treeMaxDepth -i $inputFilename -s $splitParam".!
+    }
+    rmse
+  }
+
+  def runRegressionExtraTreesWith(treeMaxDepth: Int)
+                                 (inputFilename: String, split: Option[Int] = None): Double = {
+    split.fold {
+      s"python3 $pythonRegressionsPrefix/regression_extra_trees.py -m $treeMaxDepth -i $inputFilename".!
+    } { splitParam =>
+      s"python3 $pythonRegressionsPrefix/regression_extra_trees.py -m $treeMaxDepth -i $inputFilename -s $splitParam".!
+    }
+    rmse
+  }
+
+  def runRegressionAdaBoostingWith(treeMaxDepth: Int)
+                                  (inputFilename: String, split: Option[Int] = None): Double = {
+    split.fold {
+      s"python3 $pythonRegressionsPrefix/regression_ada_boosting.py -m $treeMaxDepth -i $inputFilename".!
+    } { splitParam =>
+      s"python3 $pythonRegressionsPrefix/regression_ada_boosting.py -m $treeMaxDepth -i $inputFilename -s $splitParam".!
+    }
+    rmse
+  }
+
+  def runRegressionStochasticGradientBoostingWith()
+                                                 (inputFilename: String, split: Option[Int] = None): Double = {
+    split.fold {
+      s"python3 $pythonRegressionsPrefix/regression_stochastic_gradient_boosting.py -i $inputFilename".!
+    } { splitParam =>
+      s"python3 $pythonRegressionsPrefix/regression_stochastic_gradient_boosting.py -i $inputFilename -s $splitParam".!
+    }
+    rmse
+  }
+
   def runRegressionNearestNeighbourWith(neighboursNumber: Int, algorithm: String)
                                        (inputFilename: String, split: Option[Int] = None): Double = {
     split.fold {

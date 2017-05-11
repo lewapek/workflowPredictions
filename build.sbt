@@ -1,14 +1,18 @@
 name := "workflowPredictions"
 
-version := "1.0"
+version := "1.1"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.2"
 
-libraryDependencies ++= Seq(
-  "org.yaml" % "snakeyaml" % "1.17",
+val logging = Seq(
   "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0",
-  "org.deeplearning4j" % "deeplearning4j-core" % "0.7.2",
-  "jfree" % "jfreechart" % "1.0.13",
-  "org.nd4j" % "nd4j-native" % "0.7.2",
-  "org.bytedeco" % "javacpp" % "1.3.1"
+  "ch.qos.logback" % "logback-classic" % "1.2.1",
+  "org.codehaus.groovy" % "groovy-all" % "2.4.9",
+  "org.codehaus.janino" % "janino" % "3.0.6"
 )
+
+val other = Seq(
+  "org.yaml" % "snakeyaml" % "1.17"
+)
+
+libraryDependencies ++= logging ++ other

@@ -1,7 +1,6 @@
 import argparse
-import random
-
 import math
+import random
 from statistics import mean
 
 from sklearn.svm import SVR
@@ -51,7 +50,9 @@ print("train size = " + str(m_train) + ", test size = " + str(m_test))
 y = list(map(lambda elem: elem[0], train_data))
 x = list(map(lambda elem: elem[1:], train_data))
 
-regression = SVR(kernel=kernel, C=c, epsilon=epsilon)
+gamma = 0.1 / c
+print("gamma = " + str(gamma))
+regression = SVR(kernel=kernel, C=c, epsilon=epsilon, gamma=gamma)
 regression.fit(x, y)
 
 index_test = list(map(lambda elem: elem[-1], test_data))

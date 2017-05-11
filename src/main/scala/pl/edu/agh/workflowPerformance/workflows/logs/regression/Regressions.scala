@@ -10,7 +10,7 @@ import pl.edu.agh.workflowPerformance.workflows.Errors
 object Regressions {
 
   def normalEquations(runsQuantity: Int = 1): Regression = new Regression {
-    override val name: String = "normalEquations"
+    override val name: String = "ne"
     override val runs: Int = 1
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
@@ -20,7 +20,7 @@ object Regressions {
   }
 
   def gradientDescent(runsQuantity: Int = 1): Regression = new Regression {
-    override val name: String = "gradientDescent"
+    override val name: String = "gd"
     override val runs: Int = runsQuantity
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
@@ -30,7 +30,7 @@ object Regressions {
   }
 
   def decisionTree(maxDepth: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
-    override val name: String = s"decisionTree_$maxDepth"
+    override val name: String = s"dt_$maxDepth"
     override val runs: Int = runsQuantity
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
@@ -39,10 +39,50 @@ object Regressions {
     }
   }
 
+  def randomForest(maxDepth: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
+    override val name: String = s"rf_$maxDepth"
+    override val runs: Int = runsQuantity
+
+    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
+      runRegressionRandomForestWith(treeMaxDepth = maxDepth)(inputFilename, split)
+      Errors(rmse, absoluteErrorDivMean, relativeError)
+    }
+  }
+
+  def extraTrees(maxDepth: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
+    override val name: String = s"et_$maxDepth"
+    override val runs: Int = runsQuantity
+
+    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
+      runRegressionExtraTreesWith(treeMaxDepth = maxDepth)(inputFilename, split)
+      Errors(rmse, absoluteErrorDivMean, relativeError)
+    }
+  }
+
+  def adaBoosting(maxDepth: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
+    override val name: String = s"ab_$maxDepth"
+    override val runs: Int = runsQuantity
+
+    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
+      runRegressionAdaBoostingWith(treeMaxDepth = maxDepth)(inputFilename, split)
+      Errors(rmse, absoluteErrorDivMean, relativeError)
+    }
+  }
+
+  def stochasticGradientBoosting(runsQuantity: Int = 1): Regression = new Regression {
+    override val name: String = s"sgb"
+    override val runs: Int = runsQuantity
+
+    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
+      runRegressionStochasticGradientBoostingWith()(inputFilename, split)
+      Errors(rmse, absoluteErrorDivMean, relativeError)
+    }
+  }
+
   def nearestNeighbours(neighboursNumber: Int = 10,
                         algorithm: NearestNeighbourAlgorithms.Algorithm = NearestNeighbourAlgorithms.Auto,
                         runsQuantity: Int = 1): Regression = new Regression {
-    override val name: String = s"nearestNeighbours_${neighboursNumber}_${algorithm.name}"
+    override val name: String = s"nb_${neighboursNumber}_${algorithm.name}"
     override val runs: Int = runsQuantity
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
@@ -55,7 +95,7 @@ object Regressions {
           c: Double = 1.0,
           epsilon: Double = 0.1,
           runsQuantity: Int = 1): Regression = new Regression {
-    override val name: String = s"svm_${kernel.name}_c${c}_eps$epsilon"
+    override val name: String = s"svm_${kernel.name}_${c}_$epsilon"
     override val runs: Int = runsQuantity
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {

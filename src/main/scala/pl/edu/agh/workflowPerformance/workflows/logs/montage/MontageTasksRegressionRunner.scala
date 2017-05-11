@@ -14,20 +14,46 @@ object MontageTasksRegressionRunner extends RegressionRunnerUtils[MontageRow] wi
     parseMontageRow(row)
 
   val normalEquations = Regressions.normalEquations(runsQuantity = 1)
-  val gradientDescent = Regressions.gradientDescent(runsQuantity = 5)
-  val decisionTree = Regressions.decisionTree(maxDepth = 10, runsQuantity = 5)
+  val gradientDescent = Regressions.gradientDescent(runsQuantity = 3)
+  val decisionTree = Regressions.decisionTree(maxDepth = 10, runsQuantity = 3)
+  val randomForest = Regressions.randomForest(maxDepth = 10, runsQuantity = 3)
+  val extraTrees = Regressions.extraTrees(maxDepth = 10, runsQuantity = 3)
+  val adaBoosting = Regressions.adaBoosting(maxDepth = 10, runsQuantity = 3)
+  val stochasticGradientBoosting = Regressions.stochasticGradientBoosting(runsQuantity = 3)
+  val nearestNeighbours5 = Regressions.nearestNeighbours(neighboursNumber = 5, runsQuantity = 3)
+  val nearestNeighbours10 = Regressions.nearestNeighbours(neighboursNumber = 10, runsQuantity = 3)
+
+  val neuralNetworks = List(
+    Regressions.multilayerPerceptron(layers = 0, layerSize = 0, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 1, layerSize = 20, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 5, layerSize = 20, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 1, layerSize = 100, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 5, layerSize = 100, runsQuantity = 3)
+  )
+
+  val cList = List[Double](1.0, 100.0)
+  val epsilonList = List[Double](0.0001)
+  val svm = cList flatMap { c =>
+    epsilonList map { epsilon =>
+      Regressions.svm(SvmKernels.Rbf, c = c, epsilon = epsilon, runsQuantity = 3)
+    }
+  }
+
+  val linearRegressions: List[Regression] = List(normalEquations, gradientDescent)
+  val allRegressions: List[Regression] = List(normalEquations, gradientDescent, decisionTree, randomForest, extraTrees,
+    adaBoosting, stochasticGradientBoosting, nearestNeighbours5, nearestNeighbours10) ++ neuralNetworks ++ svm
 
   override val convertersRegression: Map[AbstractFeatureConverter[MontageRow], List[Regression]] = Map(
-    ConverterLinearFull -> List(normalEquations, gradientDescent, decisionTree),
-    ConverterLinearNoCores -> List(normalEquations, gradientDescent, decisionTree),
-    ConverterLinearNoCoresAndMem -> List(normalEquations, gradientDescent, decisionTree),
-    ConverterLinearNoOutputSize -> List(normalEquations, gradientDescent, decisionTree),
-    ConverterLinearNoDataSizes -> List(normalEquations, gradientDescent, decisionTree),
-    ConverterLinearNoInstance -> List(normalEquations, gradientDescent, decisionTree),
-    ConverterLinearNoInstanceMontageSquare -> List(normalEquations, gradientDescent, decisionTree),
-    ConverterLinearNoNetwork -> List(normalEquations, gradientDescent, decisionTree),
-    ConverterCoresInversion -> List(normalEquations, gradientDescent, decisionTree),
-    ConverterCoresAndMemInversion -> List(normalEquations, gradientDescent, decisionTree)
+    ConverterLinearFull -> allRegressions,
+    ConverterLinearNoCores -> linearRegressions,
+    ConverterLinearNoCoresAndMem -> linearRegressions,
+    ConverterLinearNoOutputSize -> linearRegressions,
+    ConverterLinearNoDataSizes -> allRegressions,
+    ConverterLinearNoInstance -> linearRegressions,
+    ConverterLinearNoInstanceMontageSquare -> linearRegressions,
+    ConverterLinearNoNetwork -> linearRegressions,
+    ConverterCoresInversion -> linearRegressions,
+    ConverterCoresAndMemInversion -> linearRegressions
   )
 
   override val headerInInputFiles: Boolean = false
