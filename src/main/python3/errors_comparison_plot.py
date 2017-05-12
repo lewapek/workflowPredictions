@@ -16,12 +16,13 @@ input_file.close()
 data = []
 for line in lines_no_header:
     split = line.split(",")
-    data.append([split[0], split[1], float(split[2]), float(split[3]), float(split[4]), int(split[5])])
+    data.append([split[0], split[1], float(split[2]), float(split[3]), float(split[4]), float(split[5]), int(split[6])])
 sorted_rmse = ["rmse", 2, sorted(data, key=lambda row: row[2])]
-sorted_abs_div_mean = ["absDivMean", 3, sorted(data, key=lambda row: row[3])]
-sorted_relative = ["relative", 4, sorted(data, key=lambda row: row[4])]
+sorted_mae = ["mae", 3, sorted(data, key=lambda row: row[3])]
+sorted_abs_div_mean = ["absDivMean", 4, sorted(data, key=lambda row: row[4])]
+sorted_relative = ["relative", 5, sorted(data, key=lambda row: row[5])]
 
-all_plots = [sorted_rmse, sorted_abs_div_mean, sorted_relative]
+all_plots = [sorted_rmse, sorted_mae, sorted_abs_div_mean, sorted_relative]
 
 for plot_type in all_plots:
     name = plot_type[0]

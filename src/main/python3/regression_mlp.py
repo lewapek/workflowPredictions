@@ -1,28 +1,12 @@
 import argparse
-import math
-import random
-from statistics import mean
 
 from sklearn.neural_network import MLPRegressor
 
-from regression_utils import read_from_input_file, write_error_file, calculate_and_write_errors_using
+from utils.parser_common import add_common_arguments_to, get_split_parameter_using
+from utils.regression_utils import read_from_input_file, calculate_and_write_errors_using
 
 parser = argparse.ArgumentParser(description="Decision tree regression")
-
-parser.add_argument('-s', '--split', dest='split', default=None, required=False, help='split training:testing')
-parser.add_argument('-t', '--tmp_dir', dest='tmp_dir', default="tmp", required=False, help='input file')
-parser.add_argument('-i', '--input', dest='input_file', default="tmp/taskLogsInput.csv", required=False,
-                    help='input file')
-parser.add_argument('-c', '--comparison', dest='comparison_file', default="tmp/comparison.csv", required=False,
-                    help='comparison file')
-parser.add_argument('--comparison_indexed', dest='comparison_file_indexed', default="tmp/comparisonIndexed.csv",
-                    required=False, help='comparison file')
-parser.add_argument('--rmse', dest='rmse_file', default='rmse.csv', required=False, help='rmse output file')
-parser.add_argument('--mae', dest='mae_file', default='mae.csv', required=False, help='mae output file')
-parser.add_argument('--abs_div_mean', dest='abs_div_mean_error_file', default='absDivMean.csv', required=False,
-                    help='absolute error divided by mean output file')
-parser.add_argument('--relative', dest='relative_error_file', default='relativeError.csv', required=False,
-                    help='relative error output file')
+add_common_arguments_to(parser)
 parser.add_argument('-a', '--algorithm', dest='algorithm_solver', default='adam', required=False, help='solver')
 parser.add_argument('-m', '--max_iterations', dest='max_iterations', default='2000', required=False,
                     help='max iterations')
@@ -37,15 +21,8 @@ max_iterations = int(args.max_iterations)
 hidden_layer_sizes = [layer_size for _ in range(hidden_layers)]
 
 data = read_from_input_file(args.input_file)
-m = len(data)
+split = get_split_parameter_using(args=args, data=data)
 
-if args.split is None:
-    print("Shuffling and calculating split")
-    random.shuffle(data)  # shuffles in place
-    split = math.ceil(0.8 * m)
-else:
-    print("Getting split from argument, split = " + args.split)
-    split = int(args.split)
 train_data = data[:split]
 test_data = data[split:]
 m_train = len(train_data)

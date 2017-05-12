@@ -11,7 +11,7 @@ import pl.edu.agh.workflowPerformance.workflows.logs.sns.structure.{SnsNnCompari
 object SnsTasksTimeProfileNnComparisonRunner extends RegressionRunnerUtils[SnsProfileRow] with SnsNnComparisonRowParser {
 
   // mode to change: 0-3
-  val yMode = 1
+  val yMode = 0
   val modeNames = Map(0 -> "stime", 1 -> "utime", 2 -> "read_bytes", 3 -> "write_bytes")
   val yModes = Map(
     0 -> parseSnsProfileRowWithStime _,

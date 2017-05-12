@@ -26,10 +26,12 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
   val headerInInputFiles: Boolean
   val outputDir: String
 
+  val splitFactorOption: Option[Double] = None
   val tasksSplitParameter: Map[String, Int] = Map()
   val indexingComparisonPlotMode: Boolean = false
 
-  lazy val resultDir = outputDir + "/" + currentDateStringUnderscores()
+  lazy val splitFactor: Double = splitFactorOption.getOrElse(0.8)
+  lazy val resultDir = outputDir + "/" + currentDateStringUnderscores() + splitFactorOption.map("_" + _).getOrElse("")
   lazy val resultDirCsv = resultDir + "/csv"
   lazy val resultDirFormatted = resultDir + "/formatted"
   lazy val resultDirByTask = resultDir + "/tasks"
@@ -84,7 +86,7 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
     logger.info(s"Running regression ${regression.name}, split = $splitParameter")
     val errors = 1 to regression.runs map { run =>
       logger.debug(s"Run #$run")
-      val error = regression.function(inputFilename, splitParameter)
+      val error = regression.function(inputFilename, splitFactor, splitParameter)
       logger.debug(s"Error #$run = $error")
 
       val outputFilesPrefix = s"$plotsDir/$task/${regression.name}/${converter.name}_run$run"

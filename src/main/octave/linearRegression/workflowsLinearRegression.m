@@ -32,13 +32,16 @@ end
 
 # getting filename from command line
 filename = '../../../../workflowsData.csv';
+splitFactorString = "0.8";
 if length(argv()) >= 1
   argument = argv(){1};
   if strcmp(argument, "--force-gui") == 0 # 0 means different
     filename = argv(){1};
+    splitFactorString = argv(){2};
   end
 end
 # filename
+splitFactor = str2double(splitFactorString)
 
 data = csvread(filename);
 # shuffling data
@@ -47,7 +50,7 @@ data = data(randomRowsPermutation, :);
 
 rowsQuantity = size(data, 1);
 rowsQuantity
-trainingRowsQuantity = int32(0.8 * rowsQuantity);
+trainingRowsQuantity = int32(splitFactor * rowsQuantity);
 trainingRowsQuantity
 columnsQuantity = size(data, 2);
 

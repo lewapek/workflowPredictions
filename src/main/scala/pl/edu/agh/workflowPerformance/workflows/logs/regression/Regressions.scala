@@ -13,8 +13,8 @@ object Regressions {
     override val name: String = "ne"
     override val runs: Int = 1
 
-    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
-      runNormalEquationsWith(inputFilename, split)
+    override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
+      runNormalEquationsWith(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
@@ -23,8 +23,8 @@ object Regressions {
     override val name: String = "gd"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
-      runLinearRegressionGradientDescentWith(inputFilename, split)
+    override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
+      runLinearRegressionGradientDescentWith(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
@@ -33,8 +33,8 @@ object Regressions {
     override val name: String = s"dt_$maxDepth"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
-      runRegressionDecisionTreeWith(treeMaxDepth = maxDepth)(inputFilename, split)
+    override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
+      runRegressionDecisionTreeWith(treeMaxDepth = maxDepth)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
@@ -43,8 +43,8 @@ object Regressions {
     override val name: String = s"rf_$maxDepth"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
-      runRegressionRandomForestWith(treeMaxDepth = maxDepth)(inputFilename, split)
+    override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
+      runRegressionRandomForestWith(treeMaxDepth = maxDepth)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
@@ -53,8 +53,8 @@ object Regressions {
     override val name: String = s"et_$maxDepth"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
-      runRegressionExtraTreesWith(treeMaxDepth = maxDepth)(inputFilename, split)
+    override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
+      runRegressionExtraTreesWith(treeMaxDepth = maxDepth)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
@@ -63,8 +63,8 @@ object Regressions {
     override val name: String = s"ab_$maxDepth"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
-      runRegressionAdaBoostingWith(treeMaxDepth = maxDepth)(inputFilename, split)
+    override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
+      runRegressionAdaBoostingWith(treeMaxDepth = maxDepth)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
@@ -73,8 +73,8 @@ object Regressions {
     override val name: String = s"sgb"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
-      runRegressionStochasticGradientBoostingWith()(inputFilename, split)
+    override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
+      runRegressionStochasticGradientBoostingWith()(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
@@ -85,8 +85,8 @@ object Regressions {
     override val name: String = s"nb_${neighboursNumber}_${algorithm.name}"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
-      runRegressionNearestNeighbourWith(neighboursNumber, algorithm.name)(inputFilename, split)
+    override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
+      runRegressionNearestNeighbourWith(neighboursNumber, algorithm.name)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
@@ -98,8 +98,8 @@ object Regressions {
     override val name: String = s"svm_${kernel.name}_${c}_$epsilon"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
-      runRegressionSvmWith(kernel.name, c, epsilon)(inputFilename, split)
+    override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
+      runRegressionSvmWith(kernel.name, c, epsilon)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
@@ -112,8 +112,8 @@ object Regressions {
     override val name: String = s"mlp_${layers}_${layerSize}_${maxIterations}_${solver.name}"
     override val runs: Int = runsQuantity
 
-    override def function(inputFilename: String, split: Option[Int] = None): Errors = {
-      runRegressionMlpWith(layers, layerSize, maxIterations, solver.name)(inputFilename, split)
+    override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
+      runRegressionMlpWith(layers, layerSize, maxIterations, solver.name)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }

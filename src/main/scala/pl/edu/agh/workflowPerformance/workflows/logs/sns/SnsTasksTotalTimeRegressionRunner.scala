@@ -21,10 +21,9 @@ object SnsTasksTotalTimeRegressionRunner extends RegressionRunnerUtils[SnsTotalT
   val nearestNeighbours10 = Regressions.nearestNeighbours(neighboursNumber = 10, runsQuantity = 3)
 
   val neuralNetworks = List(
-    Regressions.multilayerPerceptron(layers = 1, layerSize = 20, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 5, layerSize = 5, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 5, layerSize = 20, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 20, layerSize = 20, runsQuantity = 3)
+    Regressions.multilayerPerceptron(layers = 2, layerSize = 30, maxIterations = 2000, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 5, layerSize = 30, maxIterations = 2000, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 20, layerSize = 30, maxIterations = 2000, runsQuantity = 3)
   )
 
   val cList = List[Double](1.0, 100.0)
@@ -34,6 +33,8 @@ object SnsTasksTotalTimeRegressionRunner extends RegressionRunnerUtils[SnsTotalT
       Regressions.svm(SvmKernels.Rbf, c = c, epsilon = epsilon, runsQuantity = 3)
     }
   }
+
+  override val splitFactorOption = Some(0.7)
 
   override def parseRowString(row: String): SnsTotalTimeRow =
     parseSnsTotalTimeRow(row)

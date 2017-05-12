@@ -93,10 +93,10 @@ trait ErrorPersistence[T <: AbstractRow] extends PlotUtils {
       val csvFile = File(outputFilePrefix + ".csv")
       val compactErrors: Map[(String, String), Errors] = extractTaskErrorsFrom(taskError)
 
-      val header = "converter,regression,rmse,absoluteDivMean,relative,runs\n"
+      val header = "converter,regression,rmse,mae,absoluteDivMean,relative,runs\n"
       val printableErrors = compactErrors map { case ((converter, regression), errors) =>
-        converter + "," + regression + "," + errors.rmse + "," + errors.absoluteDivMean + "," + errors.relative + "," +
-          errors.runs
+        converter + "," + regression + "," + errors.rmse + "," + errors.mae + "," + errors.absoluteDivMean + "," +
+          errors.relative + "," + errors.runs
       } mkString "\n"
 
       csvFile.writeAll(header + printableErrors)
