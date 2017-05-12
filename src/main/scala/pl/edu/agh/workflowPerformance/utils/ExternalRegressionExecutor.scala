@@ -109,6 +109,9 @@ object ExternalRegressionExecutor {
   def rmse: Double =
     doubleFrom(Source.fromFile("tmp/rmse.csv").getLines().toList.head)
 
+  def mae: Double =
+    doubleFrom(Source.fromFile("tmp/mae.csv").getLines().toList.head)
+
   def absoluteErrorDivMean: Double =
     doubleFrom(Source.fromFile("tmp/absDivMean.csv").getLines().toList.head)
 

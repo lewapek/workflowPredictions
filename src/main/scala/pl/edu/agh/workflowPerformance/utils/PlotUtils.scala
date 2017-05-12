@@ -31,7 +31,7 @@ trait PlotUtils extends StatsUtils with StrictLogging {
     Future {
       val errors = calculateErrorsFrom(newComparisonFile)
       File(outputFileNoExtension + "_errors.csv").writeAll(
-        errors.rmse + "," + errors.absoluteDivMean + "," + errors.relative + "\n"
+        errors.rmse + "," + errors.mae + "," + errors.absoluteDivMean + "," + errors.relative + "\n"
       )
 
       logger.debug(s"Making plot $title")

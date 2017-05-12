@@ -11,7 +11,7 @@ import pl.edu.agh.workflowPerformance.workflows.logs.sns.structure.{SnsNnCompari
 object SnsTasksTimeProfileNnComparisonRunner extends RegressionRunnerUtils[SnsProfileRow] with SnsNnComparisonRowParser {
 
   // mode to change: 0-3
-  val yMode = 0
+  val yMode = 1
   val modeNames = Map(0 -> "stime", 1 -> "utime", 2 -> "read_bytes", 3 -> "write_bytes")
   val yModes = Map(
     0 -> parseSnsProfileRowWithStime _,
@@ -29,9 +29,9 @@ object SnsTasksTimeProfileNnComparisonRunner extends RegressionRunnerUtils[SnsPr
   val nearestNeighbours10 = Regressions.nearestNeighbours(neighboursNumber = 10, runsQuantity = 1)
 
   val neuralNetworks = List(
-    Regressions.multilayerPerceptron(layers = 1, layerSize = 20, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 5, layerSize = 20, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 20, layerSize = 20, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3)
+    Regressions.multilayerPerceptron(layers = 2, layerSize = 30, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 5, layerSize = 30, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 20, layerSize = 30, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3)
   )
 
   val cList = List[Double](1.0, 100.0)

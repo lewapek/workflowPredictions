@@ -25,22 +25,23 @@ trait StatsUtils extends StrictLogging {
 
   def calculateErrorsFrom(realVsPredicted: List[(Double, Double)]): Errors = {
     val size = realVsPredicted.size
-    var (rmse, absoluteDivMean, relative) = (0.0, 0.0, 0.0)
+    var (squaredErrorsSum, absoluteErrorsSum, relativeErrorsSum) = (0.0, 0.0, 0.0)
     var realSum = 0.0
     realVsPredicted foreach { case (real, predicted) =>
       realSum += real
 
       val difference = (real - predicted).abs
-      absoluteDivMean += difference
-      rmse += difference * difference
-      relative += difference / real
+      absoluteErrorsSum += difference
+      squaredErrorsSum += difference * difference
+      relativeErrorsSum += difference / real
     }
 
-    rmse = Math.sqrt(rmse / size)
-    absoluteDivMean = absoluteDivMean / realSum
-    relative /= size
-    logger.info(s"RMSE = $rmse, absDivMean = $absoluteDivMean, relative = $relative")
-    Errors(rmse, absoluteDivMean, relative)
+    val rmse = Math.sqrt(squaredErrorsSum / size)
+    val mae = absoluteErrorsSum / size
+    val absDivMean = absoluteErrorsSum / realSum
+    val relative = relativeErrorsSum / size
+    logger.info(s"RMSE = $rmse, mae = $mae, absDivMean = $absDivMean, relative = $relative")
+    Errors(rmse, mae, absDivMean, relative)
   }
 
 }

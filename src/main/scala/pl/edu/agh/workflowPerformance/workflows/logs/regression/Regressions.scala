@@ -15,7 +15,7 @@ object Regressions {
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
       runNormalEquationsWith(inputFilename, split)
-      Errors(rmse, absoluteErrorDivMean, relativeError)
+      Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
@@ -25,7 +25,7 @@ object Regressions {
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
       runLinearRegressionGradientDescentWith(inputFilename, split)
-      Errors(rmse, absoluteErrorDivMean, relativeError)
+      Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
@@ -35,7 +35,7 @@ object Regressions {
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
       runRegressionDecisionTreeWith(treeMaxDepth = maxDepth)(inputFilename, split)
-      Errors(rmse, absoluteErrorDivMean, relativeError)
+      Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
@@ -45,7 +45,7 @@ object Regressions {
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
       runRegressionRandomForestWith(treeMaxDepth = maxDepth)(inputFilename, split)
-      Errors(rmse, absoluteErrorDivMean, relativeError)
+      Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
@@ -55,7 +55,7 @@ object Regressions {
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
       runRegressionExtraTreesWith(treeMaxDepth = maxDepth)(inputFilename, split)
-      Errors(rmse, absoluteErrorDivMean, relativeError)
+      Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
@@ -65,7 +65,7 @@ object Regressions {
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
       runRegressionAdaBoostingWith(treeMaxDepth = maxDepth)(inputFilename, split)
-      Errors(rmse, absoluteErrorDivMean, relativeError)
+      Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
@@ -75,7 +75,7 @@ object Regressions {
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
       runRegressionStochasticGradientBoostingWith()(inputFilename, split)
-      Errors(rmse, absoluteErrorDivMean, relativeError)
+      Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
@@ -87,7 +87,7 @@ object Regressions {
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
       runRegressionNearestNeighbourWith(neighboursNumber, algorithm.name)(inputFilename, split)
-      Errors(rmse, absoluteErrorDivMean, relativeError)
+      Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
@@ -100,7 +100,7 @@ object Regressions {
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
       runRegressionSvmWith(kernel.name, c, epsilon)(inputFilename, split)
-      Errors(rmse, absoluteErrorDivMean, relativeError)
+      Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
@@ -114,7 +114,7 @@ object Regressions {
 
     override def function(inputFilename: String, split: Option[Int] = None): Errors = {
       runRegressionMlpWith(layers, layerSize, maxIterations, solver.name)(inputFilename, split)
-      Errors(rmse, absoluteErrorDivMean, relativeError)
+      Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 

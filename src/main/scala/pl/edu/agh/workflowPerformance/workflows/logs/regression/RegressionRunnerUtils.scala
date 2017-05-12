@@ -98,13 +98,14 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
       error
     }
     val rmse = errors.map(_.rmse).sum / regression.runs
+    val mae = errors.map(_.mae).sum / regression.runs
     val absDivMean = errors.map(_.absoluteDivMean).sum / regression.runs
     val relativeError = if (errors.exists(_.relative == -1)) {
       -1.0
     } else errors.map(_.relative).sum / regression.runs
-    logger.debug(s"Errors: rmse: $rmse, abs div mean: $absDivMean, relative: $relativeError, runs: ${regression.runs}")
+    logger.debug(s"Errors: rmse: $rmse, mae: $mae, abs div mean: $absDivMean, relative: $relativeError, runs: ${regression.runs}")
 
-    RegressionError(regression.name, Errors(rmse, absDivMean, relativeError, regression.runs))
+    RegressionError(regression.name, Errors(rmse, mae, absDivMean, relativeError, runs = regression.runs))
   }
 
 }

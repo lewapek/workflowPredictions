@@ -6,7 +6,7 @@ package pl.edu.agh.workflowPerformance
   */
 package object workflows {
 
-  case class Errors(rmse: Double, absoluteDivMean: Double, relative: Double, runs: Int = 1)
+  case class Errors(rmse: Double, mae: Double, absoluteDivMean: Double, relative: Double, runs: Int = 1)
 
   case class RegressionError(regressionName: String, error: Errors)
 

@@ -93,11 +93,13 @@ absolute_errors = abs(predicted - yTest);
 relative_errors = absolute_errors ./ yTest;
 
 rmse = sqrt(sum(errors) / mTest);
-absolute_error_div_mean = mean(absolute_errors) / mean(yTest);
+mae = mean(absolute_errors);
+absolute_error_div_mean = mae / mean(yTest);
 relative_error = sum(relative_errors) / mTest;
 
 # writing results to files
 csvwrite("tmp/theta.csv", theta);
 csvwrite("tmp/rmse.csv", rmse);
+csvwrite("tmp/mae.csv", mae);
 csvwrite("tmp/absDivMean.csv", absolute_error_div_mean);
 csvwrite("tmp/relativeError.csv", relative_error);

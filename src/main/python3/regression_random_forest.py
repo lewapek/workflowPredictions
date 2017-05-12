@@ -5,7 +5,7 @@ from statistics import mean
 
 from sklearn.ensemble import RandomForestRegressor
 
-from regression_utils import read_from_input_file, write_error_file
+from regression_utils import read_from_input_file, write_error_file, calculate_and_write_errors_using
 
 parser = argparse.ArgumentParser(description="Decision tree regression")
 
@@ -18,6 +18,7 @@ parser.add_argument('-c', '--comparison', dest='comparison_file', default="tmp/c
 parser.add_argument('--comparison_indexed', dest='comparison_file_indexed', default="tmp/comparisonIndexed.csv",
                     required=False, help='comparison file')
 parser.add_argument('--rmse', dest='rmse_file', default='rmse.csv', required=False, help='rmse output file')
+parser.add_argument('--mae', dest='mae_file', default='mae.csv', required=False, help='mae output file')
 parser.add_argument('--abs_div_mean', dest='abs_div_mean_error_file', default='absDivMean.csv', required=False,
                     help='absolute error divided by mean output file')
 parser.add_argument('--relative', dest='relative_error_file', default='relativeError.csv', required=False,
@@ -57,33 +58,13 @@ y_test = list(map(lambda elem: elem[0], test_data))
 y_predicted = regression.predict(x_test)
 print(list(zip(y_test, y_predicted))[:4])
 
-rmse = 0.0
-absolute_error_div_mean = 0.0
-relative = 0.0
-relative_is_infinity = False
-comparison_file = open(args.comparison_file, "w")
-comparison_file_indexed = open(args.comparison_file_indexed, "w")
-for test, predicted, index in zip(y_test, y_predicted, index_test):
-    comparison_file.write(str(test) + "," + str(predicted) + "\n")
-    comparison_file_indexed.write(str(test) + "," + str(predicted) + "," + str(index) + "\n")
-
-    absolute_error_div_mean += math.fabs(predicted - test)
-    rmse += math.pow(test - predicted, 2)
-    if not relative_is_infinity:
-        if test != 0.0:
-            relative += math.fabs(predicted - test) / test
-        else:
-            relative_is_infinity = True
-
-comparison_file.close()
-comparison_file_indexed.close()
-
-rmse = math.sqrt(rmse / m_test)
-absolute_error_div_mean = (absolute_error_div_mean / m_test) / mean(y_test)
-relative = (relative / m_test) if not relative_is_infinity else -1.0
-
-write_error_file(rmse, args.tmp_dir + "/" + args.rmse_file)
-write_error_file(absolute_error_div_mean, args.tmp_dir + "/" + args.abs_div_mean_error_file)
-write_error_file(relative, args.tmp_dir + "/" + args.relative_error_file)
-
-print(rmse, absolute_error_div_mean, relative)
+calculate_and_write_errors_using(comparison_file=args.comparison_file,
+                                 comparison_file_indexed=args.comparison_file_indexed,
+                                 y_test=y_test,
+                                 y_predicted=y_predicted,
+                                 index_test=index_test,
+                                 m_test=m_test,
+                                 rmse_file=args.tmp_dir + "/" + args.rmse_file,
+                                 mae_file=args.tmp_dir + "/" + args.mae_file,
+                                 abs_div_mean_file=args.tmp_dir + "/" + args.abs_div_mean_error_file,
+                                 relative_error_file=args.tmp_dir + "/" + args.relative_error_file)

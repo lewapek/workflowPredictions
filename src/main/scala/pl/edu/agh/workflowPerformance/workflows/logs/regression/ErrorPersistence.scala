@@ -18,15 +18,16 @@ trait ErrorPersistence[T <: AbstractRow] extends PlotUtils {
     def appendHeader(file: File, converterError: ConverterError): Unit = {
       file.appendAll(converterError.converterName + "\n")
       file.appendAll(converterError.converterDescription + "\n")
-      file.appendAll(f"${"task"}%20s${"rmse"}%15s${"absDivMean"}%15s${"relative"}%15s${"runs"}%15s\n")
+      file.appendAll(f"${"task"}%20s${"rmse"}%15s${"mae"}%15s${"absDivMean"}%15s${"relative"}%15s${"runs"}%15s\n")
     }
 
     def appendLine(file: File, regressionError: RegressionError, taskName: String): Unit = {
       val rmse = regressionError.error.rmse
+      val mae = regressionError.error.mae
       val absDivMean = regressionError.error.absoluteDivMean
       val relativeError = regressionError.error.relative
       val runs = regressionError.error.runs
-      file.appendAll(f"$taskName%20s$rmse%15.4f$absDivMean%15.4f$relativeError%15.4f$runs%15d\n")
+      file.appendAll(f"$taskName%20s$rmse%15.4f$mae%15.4f$absDivMean%15.4f$relativeError%15.4f$runs%15d\n")
     }
 
     persistErrors(taskErrors, resultDirFormatted, appendHeader, appendLine)
@@ -35,15 +36,16 @@ trait ErrorPersistence[T <: AbstractRow] extends PlotUtils {
   def persistErrorsCsv(taskErrors: List[TaskError]): Unit = {
 
     def appendHeader(file: File, converterError: ConverterError): Unit = {
-      file.appendAll("task,rmse,absDivMean,relative,runs\n")
+      file.appendAll("task,rmse,mae,absDivMean,relative,runs\n")
     }
 
     def appendLine(file: File, regressionError: RegressionError, taskName: String): Unit = {
       val rmse = regressionError.error.rmse
+      val mae = regressionError.error.mae
       val absDivMean = regressionError.error.absoluteDivMean
       val relativeError = regressionError.error.relative
       val runs = regressionError.error.runs
-      file.appendAll(s"$taskName,$rmse,$absDivMean,$relativeError,$runs\n")
+      file.appendAll(s"$taskName,$rmse,$mae,$absDivMean,$relativeError,$runs\n")
     }
 
     persistErrors(taskErrors, resultDirCsv, appendHeader, appendLine, fileExtension = Some("csv"))
