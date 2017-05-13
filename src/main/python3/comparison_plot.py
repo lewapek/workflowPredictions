@@ -29,8 +29,8 @@ columns = list(zip(*data))
 real, predicted = columns[0], columns[1]
 
 plot.title(args.title)
-plot.plot(real, ".", label="real", color="blue", )
-plot.plot(predicted, ".", label="predicted", color="red")
+plot.plot(real, ".", label="real", color="blue", ms=1)
+plot.plot(predicted, ".", label="predicted", color="red", ms=1)
 plot.legend(loc=0)
 plot.savefig(args.output_file + ".png")
 
@@ -40,7 +40,7 @@ if args.indexing_mode:
     real, predicted, index = columns[0], columns[1], columns[2]
     plot.figure()
     plot.title(args.title)
-    plot.plot(index, real, ".", label="real", color="blue", )
-    plot.plot(index, predicted, ".", label="predicted", color="red")
+    plot.plot(index, real, ".", label="real", color="blue", ms=1)
+    plot.plot(index, predicted, ".", label="predicted", color="red", ms=1)
     plot.legend(loc=0)
     plot.savefig(args.output_file + "_indexed.png")
