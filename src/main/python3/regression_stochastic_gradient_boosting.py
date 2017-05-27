@@ -6,9 +6,12 @@ from utils.parser_common import add_common_arguments_to, get_split_parameter_usi
 from utils.regression_utils import read_from_input_file, calculate_and_write_errors_using
 
 parser = argparse.ArgumentParser(description="Decision tree regression")
+parser.add_argument('-n', '--number-of-estimators', dest='estimators', default='100', required=False,
+                    help='number of estimators')
 add_common_arguments_to(parser)
 
 args = parser.parse_args()
+estimators = int(args.estimators)
 
 data = read_from_input_file(args.input_file)
 split = get_split_parameter_using(args=args, data=data)
@@ -24,7 +27,7 @@ x = list(map(lambda elem: elem[1:], train_data))
 # print("x[0]=" + str(x[0]))
 # print("y[:10]=" + str(y[:10]))
 
-regression = GradientBoostingRegressor()
+regression = GradientBoostingRegressor(n_estimators=estimators)
 regression.fit(x, y)
 
 index_test = list(map(lambda elem: elem[-1], test_data))
