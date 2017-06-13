@@ -31,6 +31,7 @@ for line in lines:
     split = line.split(",")
     data.append(extract_data(split))
 data = sorted(data, key=lambda row: row[0])
+data_length = len(data)
 
 columns = list(zip(*data))
 real, predicted = columns[0], columns[1]
@@ -38,8 +39,12 @@ real, predicted = columns[0], columns[1]
 plot.title(title)
 plot.xlabel(args.xlabel)
 plot.ylabel(args.ylabel)
-plot.plot(real, ".", label="real", color="blue", ms=1)
-plot.plot(predicted, ".", label="predicted", color="red", ms=1)
+if data_length < 1000:
+    plot.plot(real, "o", label="real", color="blue", ms=5, mfc='none')
+    plot.plot(predicted, "o", label="predicted", color="red", ms=5, mfc='none')
+else:
+    plot.plot(real, ".", label="real", color="blue", ms=1)
+    plot.plot(predicted, ".", label="predicted", color="red", ms=1)
 plot.legend(loc=0)
 plot.savefig(args.output_file + ".png")
 
@@ -51,7 +56,11 @@ if args.indexing_mode:
     plot.title(title)
     plot.xlabel(xlabel_indexed)
     plot.ylabel(args.ylabel)
-    plot.plot(index, real, ".", label="real", color="blue", ms=1)
-    plot.plot(index, predicted, ".", label="predicted", color="red", ms=1)
+    if data_length < 1000:
+        plot.plot(index, real, "o", label="real", color="blue", ms=5, mfc='none')
+        plot.plot(index, predicted, "o", label="predicted", color="red", ms=5, mfc='none')
+    else:
+        plot.plot(index, real, ".", label="real", color="blue", ms=1)
+        plot.plot(index, predicted, ".", label="predicted", color="red", ms=1)
     plot.legend(loc=0)
     plot.savefig(args.output_file + "_indexed.png")
