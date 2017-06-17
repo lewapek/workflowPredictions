@@ -13,6 +13,7 @@ import scala.reflect.io.File
   * @author lewap
   * @since 16.02.17
   */
+@deprecated
 trait RegressionRunnerUtilsConverterRegressionTask[T <: AbstractRow] extends FileUtils with CsvWriter with StrictLogging with Settings {
 
   def parseRowString(row: String): T

@@ -9,6 +9,8 @@ import pl.edu.agh.workflowPerformance.workflows.logs.regression.AbstractFeatureC
   */
 
 object ConverterLinearNoCores extends AbstractFeatureConverter[MontageRow] {
+  override def shortNameNoCommas: String = "-c"
+
   override val description: String =
     "price :: memoryGiB :: network :: montage :: inputDataSize :: outputDataSize"
 

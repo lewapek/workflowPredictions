@@ -103,7 +103,9 @@ trait ErrorPersistence[T <: AbstractRow] extends PlotUtils {
       makeErrorComparisonPlot(
         titlePrefix = taskError.taskName,
         comparisonInputFile = csvFile.path,
-        outputFilePrefix = outputFilePrefix
+        outputFilePrefix = outputFilePrefix,
+        includeConverterNames = includeConverterNamesInErrorComparisonPlots,
+        topN = topNErrorComparisonPlot
       )
     }
   }
@@ -112,7 +114,7 @@ trait ErrorPersistence[T <: AbstractRow] extends PlotUtils {
     val result = mutable.Map.empty[(String, String), Errors]
     taskError.converterErrors foreach { converterError =>
       converterError.regressionErrors foreach { regressionError =>
-        result(converterError.converterName -> regressionError.regressionName) = regressionError.error
+        result(converterError.converterShortName -> regressionError.regressionName) = regressionError.error
       }
     }
     result.toMap

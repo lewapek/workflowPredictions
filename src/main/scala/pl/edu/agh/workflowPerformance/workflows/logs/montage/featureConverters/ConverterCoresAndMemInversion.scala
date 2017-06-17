@@ -8,6 +8,8 @@ import pl.edu.agh.workflowPerformance.workflows.logs.regression.AbstractFeatureC
   * @since 14.02.17
   */
 object ConverterCoresAndMemInversion extends AbstractFeatureConverter[MontageRow] {
+  override def shortNameNoCommas: String = "1/c 1/m"
+
   override val description: String =
     "price :: (1.0 / cores) :: (1.0 / memoryGiB) :: network :: montage :: inputDataSize :: outputDataSize"
 

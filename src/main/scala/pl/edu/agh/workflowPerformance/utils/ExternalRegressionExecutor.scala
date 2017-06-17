@@ -40,50 +40,53 @@ object ExternalRegressionExecutor {
     rmse
   }
 
-  def runRegressionRandomForestWith(treeMaxDepth: Int)
+  def runRegressionRandomForestWith(treeMaxDepth: Int,
+                                    estimatorsNumber: Int = 10)
                                    (inputFilename: String,
                                     splitFactor: Double = 0.8,
                                     split: Option[Int] = None): Double = {
     split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_random_forest.py -f $splitFactor -m $treeMaxDepth -i $inputFilename".!
+      s"python3 $pythonRegressionsPrefix/regression_random_forest.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename".!
     } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_random_forest.py -f $splitFactor -m $treeMaxDepth -i $inputFilename -s $splitParam".!
+      s"python3 $pythonRegressionsPrefix/regression_random_forest.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename -s $splitParam".!
     }
     rmse
   }
 
-  def runRegressionExtraTreesWith(treeMaxDepth: Int)
+  def runRegressionExtraTreesWith(treeMaxDepth: Int,
+                                  estimatorsNumber: Int = 10)
                                  (inputFilename: String,
                                   splitFactor: Double = 0.8,
                                   split: Option[Int] = None): Double = {
     split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_extra_trees.py -f $splitFactor -m $treeMaxDepth -i $inputFilename".!
+      s"python3 $pythonRegressionsPrefix/regression_extra_trees.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename".!
     } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_extra_trees.py -f $splitFactor -m $treeMaxDepth -i $inputFilename -s $splitParam".!
+      s"python3 $pythonRegressionsPrefix/regression_extra_trees.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename -s $splitParam".!
     }
     rmse
   }
 
-  def runRegressionAdaBoostingWith(treeMaxDepth: Int)
+  def runRegressionAdaBoostingWith(treeMaxDepth: Int,
+                                   estimatorsNumber: Int = 50)
                                   (inputFilename: String,
                                    splitFactor: Double = 0.8,
                                    split: Option[Int] = None): Double = {
     split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_ada_boosting.py -f $splitFactor -m $treeMaxDepth -i $inputFilename".!
+      s"python3 $pythonRegressionsPrefix/regression_ada_boosting.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename".!
     } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_ada_boosting.py -f $splitFactor -m $treeMaxDepth -i $inputFilename -s $splitParam".!
+      s"python3 $pythonRegressionsPrefix/regression_ada_boosting.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename -s $splitParam".!
     }
     rmse
   }
 
-  def runRegressionStochasticGradientBoostingWith()
+  def runRegressionStochasticGradientBoostingWith(estimatorsNumber: Int = 100)
                                                  (inputFilename: String,
                                                   splitFactor: Double = 0.8,
                                                   split: Option[Int] = None): Double = {
     split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_stochastic_gradient_boosting.py -f $splitFactor -i $inputFilename".!
+      s"python3 $pythonRegressionsPrefix/regression_stochastic_gradient_boosting.py -f $splitFactor -n $estimatorsNumber -i $inputFilename".!
     } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_stochastic_gradient_boosting.py -f $splitFactor -i $inputFilename -s $splitParam".!
+      s"python3 $pythonRegressionsPrefix/regression_stochastic_gradient_boosting.py -f $splitFactor -n $estimatorsNumber -i $inputFilename -s $splitParam".!
     }
     rmse
   }

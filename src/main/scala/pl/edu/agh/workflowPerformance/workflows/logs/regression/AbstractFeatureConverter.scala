@@ -9,6 +9,9 @@ abstract class AbstractFeatureConverter[T <: AbstractRow] {
   def name: String =
     getClass.getSimpleName.replaceAll("\\$", "")
 
+  def shortNameNoCommas: String =
+    name
+
   val description: String
 
   def convertWithTime(row: T): List[AnyVal] =

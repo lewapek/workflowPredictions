@@ -39,42 +39,42 @@ object Regressions {
     }
   }
 
-  def randomForest(maxDepth: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
-    override val name: String = s"rf_$maxDepth"
+  def randomForest(maxDepth: Int = 10, estimatorsNumber: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
+    override val name: String = s"rf_${estimatorsNumber}_$maxDepth"
     override val runs: Int = runsQuantity
 
     override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
-      runRegressionRandomForestWith(treeMaxDepth = maxDepth)(inputFilename, splitFactor, split)
+      runRegressionRandomForestWith(treeMaxDepth = maxDepth, estimatorsNumber = estimatorsNumber)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
-  def extraTrees(maxDepth: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
-    override val name: String = s"et_$maxDepth"
+  def extraTrees(maxDepth: Int = 10, estimatorsNumber: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
+    override val name: String = s"et_${estimatorsNumber}_$maxDepth"
     override val runs: Int = runsQuantity
 
     override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
-      runRegressionExtraTreesWith(treeMaxDepth = maxDepth)(inputFilename, splitFactor, split)
+      runRegressionExtraTreesWith(treeMaxDepth = maxDepth, estimatorsNumber = estimatorsNumber)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
-  def adaBoosting(maxDepth: Int = 10, runsQuantity: Int = 1): Regression = new Regression {
-    override val name: String = s"ab_$maxDepth"
+  def adaBoosting(maxDepth: Int = 10, estimatorsNumber: Int = 50, runsQuantity: Int = 1): Regression = new Regression {
+    override val name: String = s"ab_${estimatorsNumber}_$maxDepth"
     override val runs: Int = runsQuantity
 
     override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
-      runRegressionAdaBoostingWith(treeMaxDepth = maxDepth)(inputFilename, splitFactor, split)
+      runRegressionAdaBoostingWith(treeMaxDepth = maxDepth, estimatorsNumber = estimatorsNumber)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }
 
-  def stochasticGradientBoosting(runsQuantity: Int = 1): Regression = new Regression {
-    override val name: String = s"sgb"
+  def stochasticGradientBoosting(estimatorsNumber: Int = 100, runsQuantity: Int = 1): Regression = new Regression {
+    override val name: String = s"sgb_$estimatorsNumber"
     override val runs: Int = runsQuantity
 
     override def function(inputFilename: String, splitFactor: Double, split: Option[Int] = None): Errors = {
-      runRegressionStochasticGradientBoostingWith()(inputFilename, splitFactor, split)
+      runRegressionStochasticGradientBoostingWith(estimatorsNumber)(inputFilename, splitFactor, split)
       Errors(rmse, mae, absoluteErrorDivMean, relativeError)
     }
   }

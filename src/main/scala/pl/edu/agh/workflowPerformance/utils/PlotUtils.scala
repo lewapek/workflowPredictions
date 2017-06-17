@@ -20,7 +20,11 @@ trait PlotUtils extends StatsUtils with StrictLogging {
 
   implicit val executionContext: ExecutionContext
 
-  def makeComparisonPlot(title: String, outputFileNoExtension: String, newComparisonFile: String,
+  def makeComparisonPlot(title: String,
+                         outputFileNoExtension: String,
+                         newComparisonFile: String,
+                         xlabel: String,
+                         ylabel: String,
                          indexedMode: Boolean = false,
                          comparisonFile: String = "tmp/comparison.csv",
                          comparisonFileIndexed: String = "tmp/comparisonIndexed.csv"): Unit = {
@@ -34,43 +38,59 @@ trait PlotUtils extends StatsUtils with StrictLogging {
         errors.rmse + "," + errors.mae + "," + errors.absoluteDivMean + "," + errors.relative + "\n"
       )
 
-      logger.debug(s"Making plot $title")
       if (indexedMode) {
-        invokePythonComparisonPlotWithIndexingMode(title, outputFileNoExtension, newComparisonFile)
+        invokePythonComparisonPlotWithIndexingMode(title, xlabel, ylabel, outputFileNoExtension, newComparisonFile)
       } else {
-        invokePythonComparisonPlot(title, outputFileNoExtension, newComparisonFile)
+        invokePythonComparisonPlot(title, xlabel, ylabel, outputFileNoExtension, newComparisonFile)
       }
     }
   }
 
   def makeErrorComparisonPlot(titlePrefix: String,
                               comparisonInputFile: String,
-                              outputFilePrefix: String): Unit = {
+                              outputFilePrefix: String,
+                              includeConverterNames: Boolean,
+                              topN: Option[Int]): Unit = {
     logger.debug(s"Making error comparison plot with title prefix: $titlePrefix")
     invokePythonErrorComparisonPlot(
       title = titlePrefix,
       outputPath = outputFilePrefix,
-      comparisonFile = comparisonInputFile
+      comparisonFile = comparisonInputFile,
+      includeConverterNames = includeConverterNames,
+      topN = topN
     )
   }
 
 }
 
-object PlotUtils {
+object PlotUtils extends StrictLogging {
 
   private val comparisonPlot = "src/main/python3/comparison_plot.py"
   private val errorComparisonPlot = "src/main/python3/errors_comparison_plot.py"
 
-  def invokePythonComparisonPlot(title: String, outputPath: String, comparisonFile: String): Unit = {
-    s"python3 $comparisonPlot -t $title -c $comparisonFile -o $outputPath" !
+  def invokePythonComparisonPlot(title: String, xlabel: String, ylabel: String,
+                                 outputPath: String, comparisonFile: String): Unit = {
+    val command = Seq("python3", comparisonPlot, "-t", title, "-x", xlabel, "-y", ylabel, "-c", comparisonFile, "-o", outputPath)
+    logger.debug(s"Making plot with command: $command")
+    command !
   }
 
-  def invokePythonComparisonPlotWithIndexingMode(title: String, outputPath: String, comparisonFile: String): Unit = {
-    s"python3 $comparisonPlot -t $title -c $comparisonFile -o $outputPath -i True" !
+  def invokePythonComparisonPlotWithIndexingMode(title: String, xlabel: String, ylabel: String,
+                                                 outputPath: String, comparisonFile: String): Unit = {
+    val command = Seq("python3", comparisonPlot, "-t", title, "-x", xlabel, "-y", ylabel, "-c", comparisonFile, "-o", outputPath, "-i", "True")
+    logger.debug(s"Making plot in indexing mode with command: $command")
+    command !
   }
 
-  def invokePythonErrorComparisonPlot(title: String, outputPath: String, comparisonFile: String): Unit = {
-    s"python3 $errorComparisonPlot -t $title -c $comparisonFile -o $outputPath" !
+  def invokePythonErrorComparisonPlot(title: String,
+                                      outputPath: String,
+                                      comparisonFile: String,
+                                      includeConverterNames: Boolean,
+                                      topN: Option[Int]): Unit = {
+    val topArgument = topN.map(top => s" --top $top ").getOrElse("")
+    val includeConverterNamesArgument = if (includeConverterNames) " -a " else ""
+
+    s"python3 $errorComparisonPlot -t $title -c $comparisonFile -o $outputPath $includeConverterNamesArgument $topArgument" !
   }
 
 }

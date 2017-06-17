@@ -7,12 +7,15 @@ import pl.edu.agh.workflowPerformance.workflows.logs.regression.AbstractFeatureC
   * @author lewap
   * @since 14.02.17
   */
-object ConverterLinearNoInstanceMontageSquare extends AbstractFeatureConverter[MontageRow] {
+object ConverterLinearMontageSquare extends AbstractFeatureConverter[MontageRow] {
+  override def shortNameNoCommas: String = "m^2"
+
   override val description: String =
-    "(montage * montage) :: inputDataSize :: outputDataSize"
+    "price :: cores :: memoryGiB :: (montage * montage) :: inputDataSize :: outputDataSize"
 
   override def convert(row: MontageRow): List[AnyVal] = {
     import row._
-    (montage * montage) :: inputDataSize :: outputDataSize :: Nil
+    import row.instance._
+    price :: cores :: memoryGiB :: (montage * montage) :: inputDataSize :: outputDataSize :: Nil
   }
 }

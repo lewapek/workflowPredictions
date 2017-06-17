@@ -17,6 +17,7 @@ import scala.reflect.io.File
   * @author lewap
   * @since 08.01.17
   */
+@deprecated
 object DeprecatedRegressionRunner extends Settings with CsvWriter with FileUtils with MontageRowParser with StrictLogging {
 
   object Infrastructure extends MontageYamlParser
@@ -43,7 +44,7 @@ object DeprecatedRegressionRunner extends Settings with CsvWriter with FileUtils
       ConverterLinearNoOutputSize,
       ConverterLinearNoDataSizes,
       ConverterLinearNoInstance,
-      ConverterLinearNoInstanceMontageSquare,
+      ConverterLinearMontageSquare,
       ConverterLinearNoNetwork,
       ConverterCoresInversion,
       ConverterCoresAndMemInversion

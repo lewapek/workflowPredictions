@@ -10,7 +10,8 @@ package object workflows {
 
   case class RegressionError(regressionName: String, error: Errors)
 
-  case class ConverterError(converterName: String, converterDescription: String, regressionErrors: List[RegressionError])
+  case class ConverterError(converterName: String, converterShortName: String, converterDescription: String,
+                            regressionErrors: List[RegressionError])
 
   case class TaskError(taskName: String, converterErrors: List[ConverterError])
 

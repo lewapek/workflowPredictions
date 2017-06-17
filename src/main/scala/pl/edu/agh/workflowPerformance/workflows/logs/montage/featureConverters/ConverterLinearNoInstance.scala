@@ -8,6 +8,8 @@ import pl.edu.agh.workflowPerformance.workflows.logs.regression.AbstractFeatureC
   * @since 14.02.17
   */
 object ConverterLinearNoInstance extends AbstractFeatureConverter[MontageRow] {
+  override def shortNameNoCommas: String = "-i"
+
   override val description: String =
     "montage :: inputDataSize :: outputDataSize"
 

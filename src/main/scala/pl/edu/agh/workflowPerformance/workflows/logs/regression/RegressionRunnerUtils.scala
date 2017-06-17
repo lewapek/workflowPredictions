@@ -29,7 +29,12 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
   val splitFactorOption: Option[Double] = None
   val tasksSplitParameter: Map[String, Int] = Map()
   val indexingComparisonPlotMode: Boolean = false
+  val includeConverterNamesInErrorComparisonPlots: Boolean = false
+  val topNErrorComparisonPlot: Option[Int] = None
+  val predictionParameterName: String = "time"
+  val xlabel = "sorted points"
 
+  lazy val xlabelInIndexMode = xlabel
   lazy val splitFactor: Double = splitFactorOption.getOrElse(0.8)
   lazy val resultDir = outputDir + "/" + currentDateStringUnderscores() + splitFactorOption.map("_" + _).getOrElse("")
   lazy val resultDirCsv = resultDir + "/csv"
@@ -76,7 +81,7 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
 
     val regressionErrors = regressions.map(runSingleRegressionFunction(task, converter, _))
 
-    ConverterError(converter.name, converter.description, regressionErrors)
+    ConverterError(converter.name, converter.shortNameNoCommas, converter.description, regressionErrors)
   }
 
   private def runSingleRegressionFunction(task: String,
@@ -90,8 +95,11 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
       logger.debug(s"Error #$run = $error")
 
       val outputFilesPrefix = s"$plotsDir/$task/${regression.name}/${converter.name}_run$run"
+      val plotTitlePostfix = if (converter.shortNameNoCommas == "") "" else " (" + converter.shortNameNoCommas + ")"
       makeComparisonPlot(
-        title = s"${task}_${converter.name}_${regression.name}_comparison_run$run",
+        title = s"$task: ${regression.name} $plotTitlePostfix",
+        xlabel = xlabel,
+        ylabel = predictionParameterName,
         outputFileNoExtension = s"$outputFilesPrefix",
         newComparisonFile = s"$outputFilesPrefix.csv",
         indexedMode = indexingComparisonPlotMode
