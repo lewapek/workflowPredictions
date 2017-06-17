@@ -10,136 +10,174 @@ import scala.sys.process._
   */
 object ExternalRegressionExecutor {
 
-  type RegressionFunction = String => Double
-
   private val octavePrefix = "src/main/octave"
   private val linearRegressionPrefix = octavePrefix + "/linearRegression"
   private val pythonRegressionsPrefix = "src/main/python3"
 
-  def runNormalEquationsWith(inputFilename: String, splitFactor: Double = 0.8, split: Option[Int] = None): Double = {
-    s"octave $linearRegressionPrefix/workflowsNormalEquations.m $inputFilename $splitFactor".!
-    rmse
+  def runNormalEquationsWith(inputFilename: String, splitFactor: Double = 0.8, split: Option[Int] = None): Unit = {
+    s"octave $linearRegressionPrefix/workflowsNormalEquations.m $inputFilename $splitFactor" !
   }
 
   def runLinearRegressionGradientDescentWith(inputFilename: String,
                                              splitFactor: Double = 0.8,
-                                             split: Option[Int] = None): Double = {
-    s"octave $linearRegressionPrefix/workflowsLinearRegression.m $inputFilename $splitFactor".!
-    rmse
+                                             split: Option[Int] = None): Unit = {
+    s"octave $linearRegressionPrefix/workflowsLinearRegression.m $inputFilename $splitFactor" !
   }
 
   def runRegressionDecisionTreeWith(treeMaxDepth: Int)
                                    (inputFilename: String,
                                     splitFactor: Double = 0.8,
-                                    split: Option[Int] = None): Double = {
-    split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_decision_tree.py -f $splitFactor -m $treeMaxDepth -i $inputFilename".!
-    } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_decision_tree.py -f $splitFactor -m $treeMaxDepth -i $inputFilename -s $splitParam".!
-    }
-    rmse
+                                    split: Option[Int] = None): Unit = {
+    runPythonRegressionUsing(
+      "regression_decision_tree.py",
+      inputFilename,
+      splitFactor,
+      split,
+      otherArguments = s"-m $treeMaxDepth"
+    )
   }
 
   def runRegressionRandomForestWith(treeMaxDepth: Int,
                                     estimatorsNumber: Int = 10)
                                    (inputFilename: String,
                                     splitFactor: Double = 0.8,
-                                    split: Option[Int] = None): Double = {
-    split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_random_forest.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename".!
-    } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_random_forest.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename -s $splitParam".!
-    }
-    rmse
+                                    split: Option[Int] = None): Unit = {
+    runPythonRegressionUsing(
+      "regression_random_forest.py",
+      inputFilename,
+      splitFactor,
+      split,
+      otherArguments = s"-m $treeMaxDepth -n $estimatorsNumber"
+    )
   }
 
   def runRegressionExtraTreesWith(treeMaxDepth: Int,
                                   estimatorsNumber: Int = 10)
                                  (inputFilename: String,
                                   splitFactor: Double = 0.8,
-                                  split: Option[Int] = None): Double = {
-    split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_extra_trees.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename".!
-    } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_extra_trees.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename -s $splitParam".!
-    }
-    rmse
+                                  split: Option[Int] = None): Unit = {
+    runPythonRegressionUsing(
+      "regression_extra_trees.py",
+      inputFilename,
+      splitFactor,
+      split,
+      otherArguments = s"-m $treeMaxDepth -n $estimatorsNumber"
+    )
   }
 
   def runRegressionAdaBoostingWith(treeMaxDepth: Int,
                                    estimatorsNumber: Int = 50)
                                   (inputFilename: String,
                                    splitFactor: Double = 0.8,
-                                   split: Option[Int] = None): Double = {
-    split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_ada_boosting.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename".!
-    } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_ada_boosting.py -f $splitFactor -m $treeMaxDepth -n $estimatorsNumber -i $inputFilename -s $splitParam".!
-    }
-    rmse
+                                   split: Option[Int] = None): Unit = {
+    runPythonRegressionUsing(
+      "regression_ada_boosting.py",
+      inputFilename,
+      splitFactor,
+      split,
+      otherArguments = s"-m $treeMaxDepth -n $estimatorsNumber"
+    )
   }
 
   def runRegressionStochasticGradientBoostingWith(estimatorsNumber: Int = 100)
                                                  (inputFilename: String,
                                                   splitFactor: Double = 0.8,
-                                                  split: Option[Int] = None): Double = {
-    split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_stochastic_gradient_boosting.py -f $splitFactor -n $estimatorsNumber -i $inputFilename".!
-    } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_stochastic_gradient_boosting.py -f $splitFactor -n $estimatorsNumber -i $inputFilename -s $splitParam".!
-    }
-    rmse
+                                                  split: Option[Int] = None): Unit = {
+    runPythonRegressionUsing(
+      "regression_stochastic_gradient_boosting.py",
+      inputFilename,
+      splitFactor,
+      split,
+      otherArguments = s"-n $estimatorsNumber"
+    )
   }
 
   def runRegressionNearestNeighbourWith(neighboursNumber: Int,
                                         algorithm: String)
                                        (inputFilename: String,
                                         splitFactor: Double = 0.8,
-                                        split: Option[Int] = None): Double = {
-    split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_nearest_neighbours.py -f $splitFactor -n $neighboursNumber -a $algorithm -i $inputFilename".!
-    } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_nearest_neighbours.py -f $splitFactor -n $neighboursNumber -a $algorithm -i $inputFilename -s $splitParam".!
-    }
-    rmse
+                                        split: Option[Int] = None): Unit = {
+    runPythonRegressionUsing(
+      "regression_nearest_neighbours.py",
+      inputFilename,
+      splitFactor,
+      split,
+      otherArguments = s"-n $neighboursNumber -a $algorithm"
+    )
   }
 
-  def runRegressionSvmWith(kernel: String, c: Double, epsilon: Double)
-                          (inputFilename: String, splitFactor: Double = 0.8, split: Option[Int] = None): Double = {
-    split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_svm.py -f $splitFactor -k $kernel -C $c -e $epsilon -i $inputFilename".!
-    } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_svm.py -f $splitFactor -k $kernel -C $c -e $epsilon -i $inputFilename -s $splitParam".!
-    }
-    rmse
+  def runRegressionSvmWith(kernel: String,
+                           c: Double,
+                           epsilon: Double)
+                          (inputFilename: String,
+                           splitFactor: Double = 0.8,
+                           split: Option[Int] = None): Unit = {
+    runPythonRegressionUsing(
+      "regression_svm.py",
+      inputFilename,
+      splitFactor,
+      split,
+      otherArguments = s"-k $kernel -C $c -e $epsilon"
+    )
   }
 
-  def runRegressionMlpWith(layers: Int, layerSize: Int, maxIterations: Int, solver: String)
-                          (inputFilename: String, splitFactor: Double = 0.8, split: Option[Int] = None): Double = {
-    split.fold {
-      s"python3 $pythonRegressionsPrefix/regression_mlp.py -f $splitFactor -l $layers -S $layerSize -m $maxIterations -a $solver -i $inputFilename".!
-    } { splitParam =>
-      s"python3 $pythonRegressionsPrefix/regression_mlp.py -f $splitFactor -l $layers -S $layerSize -m $maxIterations -a $solver -i $inputFilename -s $splitParam".!
-    }
-    rmse
+  def runRegressionMlpWith(layers: Int,
+                           layerSize: Int,
+                           maxIterations: Int,
+                           solver: String)
+                          (inputFilename: String,
+                           splitFactor: Double = 0.8,
+                           split: Option[Int] = None): Unit = {
+    runPythonRegressionUsing(
+      "regression_mlp.py",
+      inputFilename,
+      splitFactor,
+      split,
+      otherArguments = s"-l $layers -S $layerSize -m $maxIterations -a $solver"
+    )
   }
+
+  private def runPythonRegressionUsing(name: String,
+                                       inputFilename: String,
+                                       splitFactor: Double,
+                                       split: Option[Int],
+                                       otherArguments: String): Unit = {
+    val inputFilenameArgument = "-i " + inputFilename
+    val splitFactorArgument = "-f " + splitFactor
+    val splitArgument = splitArgumentFrom(split)
+    val allArguments = concatenateArguments(inputFilenameArgument, splitFactorArgument, splitArgument, otherArguments)
+
+    val commandPrefix = s"python3 $pythonRegressionsPrefix/$name "
+    val command = commandPrefix + allArguments
+
+    command !
+  }
+
+  private def splitArgumentFrom(split: Option[Int]): String =
+    split.map("-s " + _).getOrElse("")
+
+  private def concatenateArguments(arguments: String*): String =
+    arguments.mkString(" ")
 
   def rmse: Double =
-    doubleFrom(Source.fromFile("tmp/rmse.csv").getLines().toList.head)
+    doubleFromFile("tmp/rmse.csv")
 
   def mae: Double =
-    doubleFrom(Source.fromFile("tmp/mae.csv").getLines().toList.head)
+    doubleFromFile("tmp/mae.csv")
 
   def absoluteErrorDivMean: Double =
-    doubleFrom(Source.fromFile("tmp/absDivMean.csv").getLines().toList.head)
+    doubleFromFile("tmp/absDivMean.csv")
 
   def relativeError: Double =
-    doubleFrom(Source.fromFile("tmp/relativeError.csv").getLines().toList.head)
+    doubleFromFile("tmp/relativeError.csv")
 
   def theta: List[Double] =
     Source.fromFile("tmp/theta.csv").getLines().map(_.toDouble).toList
 
-  private def doubleFrom(string: String): Double = {
+  private def doubleFromFile(path: String): Double =
+    doubleFromStringRepresentation(Source.fromFile(path).getLines().toList.head)
+
+  private def doubleFromStringRepresentation(string: String): Double = {
     if (string.toLowerCase() == "inf") {
       -1.0
     } else string.toDouble

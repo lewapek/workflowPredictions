@@ -4,14 +4,7 @@ package pl.edu.agh.workflowPerformance
   * @author lewap
   * @since 04.12.16
   */
-object Settings extends Settings {
-
-  val dataPrefix = "src/main/resources/data"
-  val dataFile = tmpFile("workflowData.csv")
-  val thetaPath = tmpFile("theta.csv")
-  val rootMeanSquareErrorPath = tmpFile("rmse.csv")
-
-}
+object Settings extends Settings
 
 trait Settings {
 

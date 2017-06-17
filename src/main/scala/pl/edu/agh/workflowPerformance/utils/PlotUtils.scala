@@ -3,6 +3,7 @@ package pl.edu.agh.workflowPerformance.utils
 import java.nio.file.{Files, Paths}
 
 import com.typesafe.scalalogging.StrictLogging
+import pl.edu.agh.workflowPerformance.Settings
 import pl.edu.agh.workflowPerformance.workflows.logs.regression.StatsUtils
 
 import scala.concurrent.{ExecutionContext, Future}
@@ -14,20 +15,21 @@ import scala.sys.process._
   * @author lewap
   * @since 28.02.17
   */
-trait PlotUtils extends StatsUtils with StrictLogging {
+trait PlotUtils extends StatsUtils with Settings with StrictLogging {
 
   import PlotUtils._
 
   implicit val executionContext: ExecutionContext
 
-  def makeComparisonPlot(title: String,
-                         outputFileNoExtension: String,
-                         newComparisonFile: String,
-                         xlabel: String,
-                         ylabel: String,
-                         indexedMode: Boolean = false,
-                         comparisonFile: String = "tmp/comparison.csv",
-                         comparisonFileIndexed: String = "tmp/comparisonIndexed.csv"): Unit = {
+  def makeComparisonFiles(title: String,
+                          outputFileNoExtension: String,
+                          newComparisonFile: String,
+                          xlabel: String,
+                          ylabel: String,
+                          indexedMode: Boolean = false,
+                          comparisonFile: String = tmpFile("comparison.csv"),
+                          comparisonFileIndexed: String = tmpFile("comparisonIndexed.csv")): Unit = {
+
     File(outputFileNoExtension).parent.createDirectory()
     val fileToCopy = if (indexedMode) comparisonFileIndexed else comparisonFile
     Files.copy(Paths.get(fileToCopy), Paths.get(newComparisonFile))
@@ -70,15 +72,19 @@ object PlotUtils extends StrictLogging {
 
   def invokePythonComparisonPlot(title: String, xlabel: String, ylabel: String,
                                  outputPath: String, comparisonFile: String): Unit = {
-    val command = Seq("python3", comparisonPlot, "-t", title, "-x", xlabel, "-y", ylabel, "-c", comparisonFile, "-o", outputPath)
+    val command = Seq("python3", comparisonPlot, "-t", title, "-x", xlabel, "-y", ylabel, "-c", comparisonFile,
+      "-o", outputPath)
     logger.debug(s"Making plot with command: $command")
+
     command !
   }
 
   def invokePythonComparisonPlotWithIndexingMode(title: String, xlabel: String, ylabel: String,
                                                  outputPath: String, comparisonFile: String): Unit = {
-    val command = Seq("python3", comparisonPlot, "-t", title, "-x", xlabel, "-y", ylabel, "-c", comparisonFile, "-o", outputPath, "-i", "True")
+    val command = Seq("python3", comparisonPlot, "-t", title, "-x", xlabel, "-y", ylabel, "-c", comparisonFile,
+      "-o", outputPath, "-i", "True")
     logger.debug(s"Making plot in indexing mode with command: $command")
+
     command !
   }
 
@@ -87,10 +93,14 @@ object PlotUtils extends StrictLogging {
                                       comparisonFile: String,
                                       includeConverterNames: Boolean,
                                       topN: Option[Int]): Unit = {
+
     val topArgument = topN.map(top => s" --top $top ").getOrElse("")
     val includeConverterNamesArgument = if (includeConverterNames) " -a " else ""
 
-    s"python3 $errorComparisonPlot -t $title -c $comparisonFile -o $outputPath $includeConverterNamesArgument $topArgument" !
+    val command = s"python3 $errorComparisonPlot -t $title -c $comparisonFile -o $outputPath " +
+      s"$includeConverterNamesArgument $topArgument"
+
+    command !
   }
 
 }

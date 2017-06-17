@@ -96,7 +96,7 @@ trait RegressionRunnerUtils[T <: AbstractRow] extends ErrorPersistence[T] with F
 
       val outputFilesPrefix = s"$plotsDir/$task/${regression.name}/${converter.name}_run$run"
       val plotTitlePostfix = if (converter.shortNameNoCommas == "") "" else " (" + converter.shortNameNoCommas + ")"
-      makeComparisonPlot(
+      makeComparisonFiles(
         title = s"$task: ${regression.name} $plotTitlePostfix",
         xlabel = xlabel,
         ylabel = predictionParameterName,

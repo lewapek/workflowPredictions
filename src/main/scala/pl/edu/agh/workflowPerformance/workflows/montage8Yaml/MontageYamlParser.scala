@@ -11,9 +11,9 @@ import scala.language.postfixOps
   * @author lewap
   * @since 08.11.16
   */
-trait MontageYamlParser extends ParserFilters with AnyConversions {
+trait MontageYamlParser extends ParserFilters with AnyConversions with Settings {
 
-  private val dataPrefix = Settings.dataPrefix + "/montageWorkflows/"
+  private val dataPrefix =  resourcesData("montageWorkflows/")
 
   private val montage = parse("montage.8.0.yaml")
   private val infrastructure = parse("infrastructure.yaml")

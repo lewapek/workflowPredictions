@@ -1,13 +1,14 @@
 package pl.edu.agh.workflowPerformance.workflows.logs.montage.structure
 
 import pl.edu.agh.workflowPerformance.workflows.montage8Yaml.Entities.Instance
-import pl.edu.agh.workflowPerformance.workflows.logs.montage.DeprecatedRegressionRunner.Infrastructure
+import pl.edu.agh.workflowPerformance.workflows.montage8Yaml.MontageYamlParser
 
 /**
   * @author lewap
   * @since 26.01.17
   */
 trait MontageRowParser {
+
   def parseMontageRow(line: String): MontageRow = {
     val splitLine = line.trim.split(' ')
     val instanceName = Instance.convertLogsNameToYamlMontageName(splitLine.head)
@@ -22,3 +23,5 @@ trait MontageRowParser {
     MontageRow(time, performance, instance, montage, inputDataSize, outputDataSize)
   }
 }
+
+object Infrastructure extends MontageYamlParser

@@ -5,6 +5,7 @@ import java.util.Date
 
 import com.typesafe.scalalogging.StrictLogging
 import pl.edu.agh.workflowPerformance.Settings
+import pl.edu.agh.workflowPerformance.Settings.tmpFile
 import pl.edu.agh.workflowPerformance.utils.{Combinatorial, CsvWriter}
 import pl.edu.agh.workflowPerformance.workflows.montage8Yaml.Entities.Performance
 
@@ -21,7 +22,7 @@ object RunnerNormalEquationsTasksSubsets extends Settings with Combinatorial wit
 
   val dateFormatter = new SimpleDateFormat("_yyyy_MM_dd_HH_mm_ss")
   val featuresConverter = new FeaturesConverter()
-  val inputFilename = Settings.dataFile
+  val inputFilename = tmpFile("workflowData.csv")
 
   val instancesResults = resultFile("instancesResults")
   val taskResults = resultFile("tasksResults")
@@ -104,7 +105,7 @@ object RunnerNormalEquationsTasksSubsets extends Settings with Combinatorial wit
 
       runSingleCase(filteredExecTimes, toNumbersConverter)
 
-      val rmse = Source.fromFile(Settings.rootMeanSquareErrorPath).getLines().toList.head.toDouble
+      val rmse = Source.fromFile(tmpFile("rmse.csv")).getLines().toList.head.toDouble
       logger.info("rmse = {}, subset = {}", "%e".format(rmse), subset.mkString(" "))
       subset -> rmse
     }

@@ -62,6 +62,6 @@ for plot_type in all_plots:
     plot.tight_layout()
     plot.autoscale()
     plot.legend()
-    output = args.output_file + "_" + name + ".png"
+    output = args.output_file + "_" + name.replace(' ', '_') + ".png"
     print("output = " + output)
     plot.savefig(output)

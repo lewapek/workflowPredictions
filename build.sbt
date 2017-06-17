@@ -12,7 +12,18 @@ val logging = Seq(
 )
 
 val other = Seq(
-  "org.yaml" % "snakeyaml" % "1.17"
+  "org.yaml" % "snakeyaml" % "1.17",
+  "com.typesafe" % "config" % "1.3.1"
 )
 
 libraryDependencies ++= logging ++ other
+
+//mainClass in Compile := Some("")
+
+resourceDirectory in Compile := baseDirectory.value / "conf"
+
+resourceDirectory in Test := baseDirectory.value / "conf"
+
+unmanagedResourceDirectories in Compile += baseDirectory.value / "src/main/resources"
+
+unmanagedResourceDirectories in Test += baseDirectory.value / "src/main/resources"
