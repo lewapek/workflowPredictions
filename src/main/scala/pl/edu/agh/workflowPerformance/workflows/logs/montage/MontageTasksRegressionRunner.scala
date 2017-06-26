@@ -14,32 +14,29 @@ object MontageTasksRegressionRunner extends RegressionRunnerUtils[MontageRow] wi
     parseMontageRow(row)
 
   val normalEquations = Regressions.normalEquations(runsQuantity = 1)
-  val gradientDescent = Regressions.gradientDescent(runsQuantity = 3)
-  val decisionTree = Regressions.decisionTree(maxDepth = 10, runsQuantity = 3)
-  val randomForest = Regressions.randomForest(maxDepth = 10, runsQuantity = 3)
-  val extraTrees = Regressions.extraTrees(maxDepth = 10, runsQuantity = 3)
-  val adaBoosting = Regressions.adaBoosting(maxDepth = 10, runsQuantity = 3)
-  val stochasticGradientBoosting = Regressions.stochasticGradientBoosting(runsQuantity = 3)
-  val nearestNeighbours5 = Regressions.nearestNeighbours(neighboursNumber = 5, runsQuantity = 3)
-  val nearestNeighbours10 = Regressions.nearestNeighbours(neighboursNumber = 10, runsQuantity = 3)
+  val gradientDescent = Regressions.gradientDescent(runsQuantity = 2)
+  val decisionTree = Regressions.decisionTree(maxDepth = 1000, runsQuantity = 1)
+  val randomForest = Regressions.randomForest(estimatorsNumber = 50, maxDepth = 1000, runsQuantity = 1)
+  val extraTrees = Regressions.extraTrees(estimatorsNumber = 50, maxDepth = 1000, runsQuantity = 1)
+  val adaBoosting = Regressions.adaBoosting(estimatorsNumber = 100, maxDepth = 1000, runsQuantity = 1)
+  val stochasticGradientBoosting = Regressions.stochasticGradientBoosting(estimatorsNumber = 100, runsQuantity = 1)
+  val nearestNeighbours5 = Regressions.nearestNeighbours(neighboursNumber = 5, runsQuantity = 2)
+  val nearestNeighbours10 = Regressions.nearestNeighbours(neighboursNumber = 10, runsQuantity = 2)
 
   val neuralNetworks = List(
-    Regressions.multilayerPerceptron(layers = 0, layerSize = 0, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 1, layerSize = 20, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 5, layerSize = 20, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 1, layerSize = 100, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 5, layerSize = 100, runsQuantity = 3)
+    Regressions.multilayerPerceptron(layers = 2, layerSize = 30, runsQuantity = 1),
+    Regressions.multilayerPerceptron(layers = 5, layerSize = 30, runsQuantity = 1)
   )
 
   val cList = List[Double](1.0, 100.0)
   val epsilonList = List[Double](0.0001)
   val svm = cList flatMap { c =>
     epsilonList map { epsilon =>
-      Regressions.svm(SvmKernels.Rbf, c = c, epsilon = epsilon, runsQuantity = 3)
+      Regressions.svm(SvmKernels.Rbf, c = c, epsilon = epsilon, runsQuantity = 1)
     }
   }
 
-  val linearRegressions: List[Regression] = List(normalEquations, gradientDescent)
+  val linearRegressions: List[Regression] = Nil//List(normalEquations, gradientDescent)
   val allRegressions: List[Regression] = List(normalEquations, gradientDescent, decisionTree, randomForest, extraTrees,
     adaBoosting, stochasticGradientBoosting, nearestNeighbours5, nearestNeighbours10) ++ neuralNetworks ++ svm
 
@@ -48,9 +45,9 @@ object MontageTasksRegressionRunner extends RegressionRunnerUtils[MontageRow] wi
     ConverterLinearNoCores -> linearRegressions,
     ConverterLinearNoCoresAndMem -> linearRegressions,
     ConverterLinearNoOutputSize -> linearRegressions,
-    ConverterLinearNoDataSizes -> allRegressions,
+    ConverterLinearNoDataSizes -> linearRegressions,
     ConverterLinearNoInstance -> linearRegressions,
-    ConverterLinearNoInstanceMontageSquare -> linearRegressions,
+    ConverterLinearMontageSquare -> linearRegressions,
     ConverterLinearNoNetwork -> linearRegressions,
     ConverterCoresInversion -> linearRegressions,
     ConverterCoresAndMemInversion -> linearRegressions
@@ -58,8 +55,12 @@ object MontageTasksRegressionRunner extends RegressionRunnerUtils[MontageRow] wi
 
   override val headerInInputFiles: Boolean = false
   override val inputDataDir: String = resourcesData("montageWorkflows") + "/tasksLogs"
-  override val tasks: List[String] = listFilesFrom(inputDataDir)
+  val longTasks = Set("mBackground", "mDiffFit", "mProjectPP")
+  override val tasks: List[String] = listFilesFrom(inputDataDir).filterNot(longTasks.contains)
+//  override val tasks: List[String] = List("mBackground")
   override val outputDir: String = "results/montageTasks"
+  override val includeConverterNamesInErrorComparisonPlots: Boolean = true
+  override val topNErrorComparisonPlot: Option[Int] = Some(15)
 
   def main(args: Array[String]): Unit = {
     runAllTasks()

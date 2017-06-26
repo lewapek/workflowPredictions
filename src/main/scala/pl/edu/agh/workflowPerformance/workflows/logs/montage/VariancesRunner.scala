@@ -1,6 +1,7 @@
 package pl.edu.agh.workflowPerformance.workflows.logs.montage
 
 import com.typesafe.scalalogging.StrictLogging
+import pl.edu.agh.workflowPerformance.Settings
 import pl.edu.agh.workflowPerformance.utils.FileUtils
 import pl.edu.agh.workflowPerformance.workflows.logs.Stats
 import pl.edu.agh.workflowPerformance.workflows.logs.montage.structure.MontageRowParser
@@ -12,7 +13,7 @@ import scala.reflect.io.File
   * @author lewap
   * @since 26.01.17
   */
-object VariancesRunner extends MontageRowParser with FileUtils with StrictLogging {
+object VariancesRunner extends MontageRowParser with FileUtils with Settings with StrictLogging {
 
   case class InstanceMontageTime(instance: String, montage: Double, time: Double) {
     def toInstanceMontage = InstanceMontage(instance, montage)
@@ -22,14 +23,14 @@ object VariancesRunner extends MontageRowParser with FileUtils with StrictLoggin
 
   case class TotalTime(length: Long, times: List[Double])
 
-  val resultFile = File("results/montageTasks/stats/stats")
+  val outputFile = File(resultFile("montageTasks/stats/stats"))
 
   def main(args: Array[String]): Unit = {
     val tasks = listFilesFrom(AllToTaskLogsRunner.taskLogsDirectory).sorted
     logger.debug("Tasks: {}", tasks.mkString(", "))
 
-    resultFile.truncate()
-    resultFile.appendAll(f"${"task, w=weighted"}%20s${"w stdev"}%15s${"stdev"}%15s${"w variance"}%15s${"variance"}%15s\n")
+    outputFile.truncate()
+    outputFile.appendAll(f"${"task, w=weighted"}%20s${"w stdev"}%15s${"stdev"}%15s${"w variance"}%15s${"variance"}%15s\n")
     tasks foreach { task =>
       logger.info("Analyzing task: {}", task)
       statsFromSingleTask(task)
@@ -74,12 +75,12 @@ object VariancesRunner extends MontageRowParser with FileUtils with StrictLoggin
 
     if (stats.size < stats.values.map(_.quantity).sum) {
       logger.info("Non-empty stats, size = {}", stats.size)
-      resultFile.appendAll(
+      outputFile.appendAll(
         f"${task.split('/').last}%20s$weightedStdevMean%15.2f$stdevMean%15.2f$weightedVarianceMean%15.2f$varianceMean%15.2f\n"
       )
     } else {
       logger.info("Empty stats")
-      resultFile.appendAll(
+      outputFile.appendAll(
         f"${task.split('/').last}%20s" + (f"${"-"}%15s" * 4) + "\n"
       )
     }

@@ -29,9 +29,9 @@ object SnsTasksTimeProfileNnComparisonRunner extends RegressionRunnerUtils[SnsPr
   val nearestNeighbours10 = Regressions.nearestNeighbours(neighboursNumber = 10, runsQuantity = 1)
 
   val neuralNetworks = List(
-    Regressions.multilayerPerceptron(layers = 2, layerSize = 30, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 5, layerSize = 30, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3),
-    Regressions.multilayerPerceptron(layers = 20, layerSize = 30, maxIterations=2000, solver = Mlp.Lbfgs, runsQuantity = 3)
+    Regressions.multilayerPerceptron(layers = 2, layerSize = 30, maxIterations = 2000, solver = Mlp.Lbfgs, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 5, layerSize = 30, maxIterations = 2000, solver = Mlp.Lbfgs, runsQuantity = 3),
+    Regressions.multilayerPerceptron(layers = 20, layerSize = 30, maxIterations = 2000, solver = Mlp.Lbfgs, runsQuantity = 3)
   )
 
   val cList = List[Double](1.0, 100.0)
@@ -49,6 +49,7 @@ object SnsTasksTimeProfileNnComparisonRunner extends RegressionRunnerUtils[SnsPr
     "sassena6" -> 409
   )
   override val indexingComparisonPlotMode: Boolean = true
+  override val predictionParameterName = modeNames(yMode)
 
   override def parseRowString(row: String): SnsProfileRow =
     yModes(yMode)(row)

@@ -12,11 +12,11 @@ object SnsTasksTotalTimeRegressionRunner extends RegressionRunnerUtils[SnsTotalT
 
   val normalEquations = Regressions.normalEquations(runsQuantity = 1)
   val gradientDescent = Regressions.gradientDescent(runsQuantity = 3)
-  val decisionTree = Regressions.decisionTree(maxDepth = 10, runsQuantity = 3)
-  val randomForest = Regressions.randomForest(maxDepth = 10, runsQuantity = 3)
-  val extraTrees = Regressions.extraTrees(maxDepth = 10, runsQuantity = 3)
-  val adaBoosting = Regressions.adaBoosting(maxDepth = 10, runsQuantity = 3)
-  val stochasticGradientBoosting = Regressions.stochasticGradientBoosting(runsQuantity = 3)
+  val decisionTree = Regressions.decisionTree(maxDepth = 10, runsQuantity = 1)
+  val randomForest = Regressions.randomForest(maxDepth = 10, runsQuantity = 1)
+  val extraTrees = Regressions.extraTrees(maxDepth = 10, runsQuantity = 1)
+  val adaBoosting = Regressions.adaBoosting(maxDepth = 10, runsQuantity = 1)
+  val stochasticGradientBoosting = Regressions.stochasticGradientBoosting(runsQuantity = 1)
   val nearestNeighbours5 = Regressions.nearestNeighbours(neighboursNumber = 5, runsQuantity = 3)
   val nearestNeighbours10 = Regressions.nearestNeighbours(neighboursNumber = 10, runsQuantity = 3)
 
@@ -30,11 +30,11 @@ object SnsTasksTotalTimeRegressionRunner extends RegressionRunnerUtils[SnsTotalT
   val epsilonList = List[Double](0.0001)
   val svm = cList flatMap { c =>
     epsilonList map { epsilon =>
-      Regressions.svm(SvmKernels.Rbf, c = c, epsilon = epsilon, runsQuantity = 3)
+      Regressions.svm(SvmKernels.Rbf, c = c, epsilon = epsilon, runsQuantity = 1)
     }
   }
 
-  override val splitFactorOption = Some(0.7)
+  override val splitFactorOption = Some(0.8)
 
   override def parseRowString(row: String): SnsTotalTimeRow =
     parseSnsTotalTimeRow(row)

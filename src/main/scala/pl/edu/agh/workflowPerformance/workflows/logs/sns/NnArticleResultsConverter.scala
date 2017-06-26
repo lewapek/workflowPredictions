@@ -1,5 +1,7 @@
 package pl.edu.agh.workflowPerformance.workflows.logs.sns
 
+import pl.edu.agh.workflowPerformance.Settings
+
 import scala.io.Source
 import scala.reflect.io.File
 
@@ -7,9 +9,9 @@ import scala.reflect.io.File
   * @author lewap
   * @since 22.04.17
   */
-object NnArticleResultsConverter {
+object NnArticleResultsConverter extends Settings {
 
-  val pathPrefix = "src/main/resources/data/snsWorkflows/nnResults"
+  val pathPrefix = resourcesData("snsWorkflows/nnResults")
   val tasksPath = pathPrefix + "/tasks"
   val trainingData = pathPrefix + "/workflow_performance_compact_training_25.csv"
   val testingData = pathPrefix + "/workflow_performance_compact_testing_25.csv"

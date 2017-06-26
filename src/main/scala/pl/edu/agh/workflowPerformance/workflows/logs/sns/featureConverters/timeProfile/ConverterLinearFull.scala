@@ -19,3 +19,15 @@ object ConverterLinearFull extends AbstractFeatureConverter[SnsProfileRow] {
     atoms :: cores :: timesteps :: outputFrequency :: pointInTime :: Nil
   }
 }
+
+object A extends App {
+  import reflect.runtime._
+
+  println(currentMirror)
+  println(currentMirror.staticModule("scala.Array"))
+  println(currentMirror.reflectModule(currentMirror.staticModule("scala.Array")))
+  println(currentMirror.reflectModule(currentMirror
+    .staticModule("pl.edu.agh.workflowPerformance.workflows.logs.sns.featureConverters.timeProfile.ConverterLinearFull"))
+    .instance.asInstanceOf[AbstractFeatureConverter[SnsProfileRow]].description
+  )
+}
